@@ -4,6 +4,7 @@ import TypingEffect from '../shared/TypyingEffect.jsx';
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
+  console.log('aaaaaaaaaaaaaaaaa');
 
   return (
     <section role="Presenación" id="Hero" className="w-full h-screen py-10">

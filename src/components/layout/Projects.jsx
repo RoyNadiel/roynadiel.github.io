@@ -55,7 +55,7 @@ export default function Projects() {
       skills: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers'],
       skillUsed: 'TS',
       imageWidth: '80',
-      projectUrl: 'https://cv.almadaroy19.workers.dev',
+      projectUrl: 'https://curriculum.almadaroy19.workers.dev',
     },
   ];
 
