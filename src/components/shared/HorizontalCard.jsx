@@ -81,54 +81,58 @@ function ProjectCard({
           </div>
         </div>
 
-        <div className="flex-1 p-8 md:p-10 flex flex-col justify-between">
+        <div className="flex-1 p-4 md:p-10 flex flex-col justify-between">
           <div>
             <div className="flex items-start justify-between mb-2">
               <div className="flex-1">
-                <div className="flex items-baseline gap-3 mb-3">
-                  <h3 className="text-3xl font-bold text-red-600">{name}</h3>
+                <div className="flex items-center justify-between gap-3 mb-3">
+                  <h3 className="text-xl md:text-3xl font-bold text-red-600">
+                    {name}
+                  </h3>
+                  <div className="flex items-center justify-center">
+                    {githubUrl && (
+                      <a
+                        href={githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-4 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-110 flex-shrink-0"
+                        aria-label="Ver proyecto"
+                      >
+                        <GitHubSVG className="w-5 h-5" />
+                      </a>
+                    )}
+
+                    {projectUrl && (
+                      <a
+                        href={projectUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-110 flex-shrink-0"
+                        aria-label="Ver proyecto"
+                      >
+                        <ExternalLink className="w-5 h-5" />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-3 mb-5">
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg border border-amber-100 group-hover:shadow-lg transition-all duration-300">
-                    <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
-                    <span className="text-sm font-semibold text-amber-700">
+                  <div className="flex items-center gap-1.5 md:gap-2 px-2 md:px-4 py-1.5 md:py-2 bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg border border-amber-100 group-hover:shadow-lg transition-all duration-300">
+                    <Star className="w-3 h-3 md:w-4 md:h-4 text-amber-500 fill-amber-500" />
+                    <span className="text-xs md:text-sm font-semibold text-amber-700">
                       {mainSkill}
                     </span>
                   </div>
 
                   <div
-                    className={`flex items-center gap-1.5 px-4 py-2 rounded-lg border text-sm font-semibold transition-all duration-300 ${complexityColor[complexity]}`}
+                    className={`flex items-center gap-1 md:gap-1.5 px-2 md:px-4 py-1.5 md:py-2 rounded-lg border text-xs md:text-sm font-semibold transition-all duration-300 ${complexityColor[complexity]}`}
                   >
-                    <Code2 className="w-4 h-4" />
-                    Complejidad: {complexityLabel[complexity]}
+                    <Code2 className="w-3 h-3 md:w-4 md:h-4" />
+                    <span>Complejidad: </span>
+                    {complexityLabel[complexity]}
                   </div>
                 </div>
               </div>
-
-              {githubUrl && (
-                <a
-                  href={githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ml-4 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-110 flex-shrink-0"
-                  aria-label="Ver proyecto"
-                >
-                  <GitHubSVG className="w-5 h-5" />
-                </a>
-              )}
-
-              {projectUrl && (
-                <a
-                  href={projectUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ml-2 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-110 flex-shrink-0"
-                  aria-label="Ver proyecto"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                </a>
-              )}
             </div>
 
             <p className="font-league-spartan text-gray-100 leading-relaxed mb-8 text-base md:text-xl">
@@ -137,47 +141,49 @@ function ProjectCard({
           </div>
 
           <div className="space-y-6 border-t border-gray-100 pt-6">
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-3 rounded-lg bg-gradient-to-br from-blue-100 to-blue-200 group-hover:shadow-md transition-all duration-300">
-                <div className="text-xs text-gray-600 uppercase font-semibold tracking-wider mb-1">
-                  <Clock className="w-4 h-4 mx-auto text-blue-600 mb-1" />
+            <div className="grid grid-cols-3 gap-2 md:gap-4">
+              <div className="text-center p-2 md:p-3 rounded-lg bg-gradient-to-br from-blue-100 to-blue-200 group-hover:shadow-md transition-all duration-300">
+                <div className="text-[10px] md:text-xs text-gray-600 uppercase font-semibold tracking-wider mb-1">
+                  <Clock className="w-3 h-3 md:w-4 md:h-4 mx-auto text-blue-600 mb-1" />
                   Duración
                 </div>
-                <div className="text-sm font-bold text-gray-900">
+                <div className="text-[10px] md:text-sm font-bold text-gray-900">
                   {duration}
                 </div>
               </div>
 
-              <div className="text-center p-3 rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 group-hover:shadow-md transition-all duration-300">
-                <Users className="w-4 h-4 mx-auto text-purple-600 mb-1" />
-                <div className="text-xs text-gray-600 uppercase font-semibold tracking-wider mb-1">
+              <div className="text-center p-2 md:p-3 rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 group-hover:shadow-md transition-all duration-300">
+                <Users className="w-3 h-3 md:w-4 md:h-4 mx-auto text-purple-600 mb-1" />
+                <div className="text-[10px] md:text-xs text-gray-600 uppercase font-semibold tracking-wider mb-1">
                   Audiencia
                 </div>
-                <div className="text-sm font-bold text-gray-900">
+                <div className="text-[10px] md:text-sm font-bold text-gray-900">
                   {targetAudience}
                 </div>
               </div>
 
-              <div className="text-center p-3 rounded-lg bg-gradient-to-br from-red-100 to-red-200  group-hover:shadow-md transition-all duration-300">
-                <Code2 className="w-4 h-4 mx-auto text-red-600 mb-1" />
-                <div className="text-xs text-gray-600 uppercase font-semibold tracking-wider mb-1">
+              <div className="text-center p-2 md:p-3 rounded-lg bg-gradient-to-br from-red-100 to-red-200  group-hover:shadow-md transition-all duration-300">
+                <Code2 className="w-3 h-3 md:w-4 md:h-4 mx-auto text-red-600 mb-1" />
+                <div className="text-[10px] md:text-xs text-gray-600 uppercase font-semibold tracking-wider mb-1">
                   Stack
                 </div>
-                <div className="text-sm font-bold text-gray-900">
-                  {skillsUsed.length} Tecnologías
+                <div className="text-[10px] md:text-sm font-bold text-gray-900">
+                  {skillsUsed.length}{' '}
+                  <span className="hidden sm:inline">Tecnologías</span>
+                  <span className="sm:hidden">Tech</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <h4 className="text-xs font-bold text-gray-100 uppercase tracking-widest mb-4">
+              <h4 className="text-[10px] md:text-xs font-bold text-gray-100 uppercase tracking-widest mb-3 md:mb-4">
                 Tecnologías Utilizadas
               </h4>
               <div className="flex flex-wrap gap-2">
                 {skillsUsed.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 text-xs font-semibold rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md hover:from-blue-50 hover:to-blue-100 transition-all duration-300 cursor-default"
+                    className="px-2 md:px-4 py-1 md:py-2 bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 text-[10px] md:text-xs font-semibold rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md hover:from-blue-50 hover:to-blue-100 transition-all duration-300 cursor-default"
                   >
                     {skill}
                   </span>

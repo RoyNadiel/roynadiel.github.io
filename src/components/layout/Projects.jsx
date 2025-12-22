@@ -99,7 +99,7 @@ export default function Projects() {
     <section
       role="Projects"
       id="Proyectos"
-      className="w-full relative min-h-screen grid grid-cols-1 grid-rows-[auto_1fr] place-items-center gap-15 px-14
+      className="w-full relative min-h-screen grid grid-cols-1 grid-rows-[auto_1fr] place-items-center gap-15 px-4 md:px-14
                 md:grid-cols-1 md:grid-rows-[auto_1fr] md:gap-5"
     >
       <h4
