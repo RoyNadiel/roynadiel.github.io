@@ -118,6 +118,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media (width >= 1072px){
+  .reflect-image {
+      /* Reflejo hacia abajo, 2px de separación y desvanecimiento */
+      -webkit-box-reflect: below 3px linear-gradient(transparent, rgba(0,0,0,0.5));
+    }
+}
+
+
 body {
   margin: 0;
   min-height: 100vh;

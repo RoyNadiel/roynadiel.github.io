@@ -1,116 +1,117 @@
 import Card from '../shared/Card';
 import '../shared/Shapes.css';
+import { CodeIcon } from '../shared/SVG.jsx';
+import HorizontalCard from '../shared/HorizontalCard';
 
 export default function Projects() {
   const Projects = [
     {
       id: 1,
-      name: 'WrittingJS',
-      src: './projects/WrittingJS.mp4',
+      name: 'Tasa Actual',
+      src: './projects/TasaActual.mp4',
       description:
-        'Playground de JavaScript similar a RunJS. Menos permisivo, diseñado para preservar buenas practicas.',
-      skills: ['JavaScript', 'HTML', 'CSS', 'Monaco Editor'],
-      skillUsed: 'JS',
-      imageWidth: '80',
-      projectUrl: 'https://writtingjs.pages.dev',
+        'Aplicación web de conversión de divisas en tiempo real para el mercado venezolano. Consulta tasas de cambio actualizadas del par Bolívar/Dólar mediante integración con APIs externas, ofreciendo cálculos precisos y una interfaz intuitiva para usuarios que necesitan información cambiaria confiable.',
+      skillsUsed: ['Vite', 'React', 'TailwindCSS', 'TypeScript', 'Api Rest'],
+      mainSkill: 'TS',
+      projectUrl: 'https://tasaactual.com/',
+      status: 'Escalable',
+      duration: 'MVP - 1 Mes',
+      complexity: 'medium',
+      targetAudience: 'Venezolanos',
     },
     {
       id: 2,
-      name: 'Chess Game',
-      src: './projects/Chess.mp4',
+      name: 'WrittingJS',
+      src: './projects/WrittingJS.mp4',
       description:
-        'Un juego de mesa clásico para dos jugadores. Proximamente con Sockets TCP.',
-      skills: ['.NET', 'C#', 'WPF', 'XAML'],
-      skillUsed: 'C#',
-      imageWidth: '68',
-      projectUrl: 'https://github.com/RoyNadiel/Chess',
+        'Entorno de desarrollo interactivo para JavaScript inspirado en RunJS. Incluye editor de código con Monaco Editor, ejecución en tiempo real, y validaciones estrictas que fomentan las mejores prácticas de programación. Ideal para aprender, experimentar y prototipar código JavaScript de forma rápida y segura.',
+      skillsUsed: ['Vanilla', 'JavaScript', 'HTML', 'CSS', 'Monaco Editor'],
+      mainSkill: 'JS',
+      projectUrl: 'https://writtingjs.pages.dev/',
+      status: 'Escalable',
+      duration: '3 Meses',
+      complexity: 'medium',
+      targetAudience: 'Estudiantes de JS',
     },
     {
       id: 3,
-      name: 'Island Store',
-      src: './projects/IslandStore.mp4',
+      name: 'Chess Game',
+      src: './projects/Chess.mp4',
       description:
-        'Un ecommerce para la venta de productos, basados en categoría.',
-      skills: ['NextJS', 'TypeScript', 'TailwindCSS', 'Api Rest', 'SSR'],
-      skillUsed: 'TS',
-      imageWidth: '80',
-      projectUrl: 'https://github.com/RoyNadiel/ECommerce',
+        'Implementación completa del juego de ajedrez para dos jugadores desarrollada en WPF. Incluye validación de movimientos legales, detección de jaque y jaque mate, y una interfaz gráfica elegante. En desarrollo: modo multijugador en línea mediante sockets TCP para partidas remotas en tiempo real.',
+      skillsUsed: ['.NET', 'C#', 'WPF', 'XAML'],
+      mainSkill: 'C#',
+      githubUrl: 'https://github.com/RoyNadiel/Chess',
+      status: 'En Progreso',
+      duration: '2 Meses',
+      complexity: 'high',
+      targetAudience: 'Todos',
     },
     {
       id: 4,
-      name: 'Writer',
-      src: './projects/Writer.mp4',
+      name: 'Island Store',
+      src: './projects/IslandStore.mp4',
       description:
-        'Un bloc de notas basado en los documento de texto de Windows.',
-      skills: ['.NET', 'C#', 'WPF', 'XAML', 'File System'],
-      skillUsed: 'C#',
-      imageWidth: '80',
-      projectUrl: 'https://github.com/RoyNadiel/Notes',
+        'Plataforma de comercio electrónico full-stack con arquitectura moderna. Presenta catálogo de productos organizado por categorías, sistema de búsqueda y filtrado, y renderizado del lado del servidor (SSR) para optimizar SEO y rendimiento. Integra APIs REST para gestión de inventario y procesamiento de pedidos.',
+      skillsUsed: ['NextJS', 'TypeScript', 'TailwindCSS', 'Api Rest', 'SSR'],
+      mainSkill: 'TS',
+      githubUrl: 'https://github.com/RoyNadiel/ECommerce',
+      projectUrl: 'https://islandstore.vercel.app/',
+      status: 'Completado',
+      duration: '1 Mes',
+      complexity: 'low',
+      targetAudience: 'Consumidores',
     },
     {
       id: 5,
       name: 'CV',
       src: './projects/CV.mp4',
-      description: 'Hoja de vida como programador en estilo PDF',
-      skills: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers'],
-      skillUsed: 'TS',
-      imageWidth: '80',
+      description:
+        'Currículum vitae interactivo renderizado como PDF en el navegador. Desarrollado con React y TypeScript, desplegado en Cloudflare Workers para máxima velocidad y disponibilidad global. Utiliza Hono como framework backend ligero, ofreciendo una presentación profesional de habilidades y experiencia con carga instantánea.',
+      skillsUsed: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers'],
+      mainSkill: 'TS',
+      githubUrl: 'https://github.com/RoyNadiel/CV',
       projectUrl: 'https://curriculum.almadaroy19.workers.dev',
+      status: 'Completado',
+      duration: '1 Mes',
+      complexity: 'medium',
+      targetAudience: 'Todos',
+    },
+    {
+      id: 6,
+      name: 'Writer',
+      src: './projects/Writer.mp4',
+      description:
+        'Editor de texto de escritorio inspirado en el Bloc de Notas de Windows, desarrollado con tecnologías .NET. Ofrece funcionalidades esenciales como crear, abrir, editar y guardar archivos de texto, con una interfaz limpia y familiar. Implementa operaciones de sistema de archivos nativas para una experiencia fluida.',
+      skillsUsed: ['.NET', 'C#', 'WPF', 'XAML', 'File System'],
+      mainSkill: 'C#',
+      githubUrl: 'https://github.com/RoyNadiel/Notes',
+      status: 'Completado',
+      duration: '1 Mes',
+      complexity: 'low',
+      targetAudience: 'Escritores',
     },
   ];
+
+  console.log(Projects);
 
   return (
     <section
       role="Projects"
       id="Proyectos"
-      className="w-full relative min-h-screen grid grid-cols-1 grid-rows-[auto_1fr] place-items-center  gap-15 
-                md:grid-cols-2 md:px-10
-                lg:grid-cols-3 lg:gap-5
-                xl:px-20"
+      className="w-full relative min-h-screen grid grid-cols-1 grid-rows-[auto_1fr] place-items-center gap-15 px-14
+                md:grid-cols-1 md:grid-rows-[auto_1fr] md:gap-5"
     >
       <h4
         className="col-span-full inline-flex items-center gap-2 mt-25 text-center text-red-500 text-4xl font-montserrat-alt tracking-widest
                  md:text-5xl"
       >
         PROYECTOS
-        <svg
-          className="w-12 md:w-15 shrink-0"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            {' '}
-            <path
-              d="M17 7.82959L18.6965 9.35641C20.239 10.7447 21.0103 11.4389 21.0103 12.3296C21.0103 13.2203 20.239 13.9145 18.6965 15.3028L17 16.8296"
-              stroke="#EF4444"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            ></path>{' '}
-            <path
-              d="M13.9868 5L12 12.4149L10.0132 19.8297"
-              stroke="#EF4444"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            ></path>{' '}
-            <path
-              d="M7.00005 7.82959L5.30358 9.35641C3.76102 10.7447 2.98975 11.4389 2.98975 12.3296C2.98975 13.2203 3.76102 13.9145 5.30358 15.3028L7.00005 16.8296"
-              stroke="#EF4444"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            ></path>{' '}
-          </g>
-        </svg>
+        <CodeIcon />
       </h4>
 
       {Projects.map((project) => (
-        <Card key={project.id} {...project} />
+        <HorizontalCard key={project.id} {...project} />
       ))}
     </section>
   );

@@ -13,7 +13,7 @@ import {
   Hono,
   Vite,
   Cloudflare,
-} from '../../../public/skills.jsx';
+} from '../shared/SVG.jsx';
 
 export default function AboutMe() {
   return (
@@ -55,79 +55,79 @@ export default function AboutMe() {
       </article>
 
       <ul className="flex flex-wrap items-center justify-center gap-5 list-none list-inside col-span-full">
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-amber-500/20 hover:shadow-xl hover:shadow-orange-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-amber-500/20 hover:shadow-xl hover:shadow-orange-500/50 reflect-image">
           <HTML></HTML>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-orange-500 text-orange-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             HTML
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-blue-500/20 hover:shadow-xl hover:shadow-blue-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-blue-500/20 hover:shadow-xl hover:shadow-blue-500/50 reflect-image">
           <CSS></CSS>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-blue-500 text-blue-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             CSS
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-blue-600/20 hover:shadow-xl hover:shadow-blue-600/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-blue-600/20 hover:shadow-xl hover:shadow-blue-600/50 reflect-image">
           <TailwindCSS></TailwindCSS>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-blue-600 text-blue-600 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             TailwindCSS
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-yellow-500/20 hover:shadow-xl hover:shadow-yellow-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-yellow-500/20 hover:shadow-xl hover:shadow-yellow-500/50 reflect-image">
           <JS></JS>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-yellow-500 text-yellow-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             JavaScript
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-blue-300/20 hover:shadow-xl hover:shadow-blue-400/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-blue-300/20 hover:shadow-xl hover:shadow-blue-400/50 reflect-image">
           <TypeScript></TypeScript>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-blue-400 text-blue-400 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             TypeScript
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-purple-500/20 hover:shadow-xl hover:shadow-purple-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-purple-500/20 hover:shadow-xl hover:shadow-purple-500/50 reflect-image">
           <CSHARP></CSHARP>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-purple-500 text-purple-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             C#
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-amber-500/20 hover:shadow-xl hover:shadow-amber-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-amber-500/20 hover:shadow-xl hover:shadow-amber-500/50 reflect-image">
           <Git></Git>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-amber-500 text-amber-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             Git
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-pink-500/20 hover:shadow-xl hover:shadow-pink-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-pink-500/20 hover:shadow-xl hover:shadow-pink-500/50 reflect-image">
           <Vite></Vite>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-pink-500 text-pink-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             Vite
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-amber-600/20 hover:shadow-xl hover:shadow-amber-600/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-amber-600/20 hover:shadow-xl hover:shadow-amber-600/50 reflect-image">
           <Cloudflare></Cloudflare>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-amber-600 text-amber-600 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             Cloudflare
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-blue-500/20 hover:shadow-xl hover:shadow-blue-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-blue-500/20 hover:shadow-xl hover:shadow-blue-500/50 reflect-image">
           <React></React>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-blue-500 text-blue-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             React
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-black/20 hover:shadow-xl hover:shadow-white/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-black/20 hover:shadow-xl hover:shadow-white/50 reflect-image">
           <NextJS></NextJS>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-white text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             NextJS
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-green-500/20 hover:shadow-xl hover:shadow-green-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-green-500/20 hover:shadow-xl hover:shadow-green-500/50 reflect-image">
           <NodeJS></NodeJS>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-green-500 text-green-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             NodeJS
           </span>
         </li>
-        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-orange-500/20 hover:shadow-xl hover:shadow-orange-500/50">
+        <li className="w-8 p-2 lg:w-14 lg:p-4 skillsImg relative group rounded-full bg-orange-500/20 hover:shadow-xl hover:shadow-orange-500/50 reflect-image">
           <Hono></Hono>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-violet-950 border border-orange-500 text-orange-500 text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
             Hono

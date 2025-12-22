@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header
       role="Barra de Navegacion"
-      className="fixed w-full h-20 flex flex-col gap-1 py-2 px-4 items-center z-10 backdrop-blur-xs
+      className="fixed w-full h-20 flex flex-col gap-1 py-2 px-4 items-center z-20 backdrop-blur-xs
         md:flex-row md:justify-between md:px-15
         lg:flex-row lg:justify-between xl:px-40"
     >
