@@ -170,7 +170,7 @@ function ProjectCard({
                 <div className="text-[10px] md:text-sm font-bold text-gray-900">
                   {skillsUsed.length}{' '}
                   <span className="hidden sm:inline">Tecnologías</span>
-                  <span className="sm:hidden">Tech</span>
+                  <span className="sm:hidden">Tecnologías</span>
                 </div>
               </div>
             </div>
