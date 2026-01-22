@@ -4,7 +4,16 @@ import TypingEffect from '../shared/TypyingEffect.jsx';
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
-  console.log('aaaaaaaaaaaaaaaaa');
+  const [copied, setCopied] = useState(false);
+
+  const handleContactClick = (e) => {
+    // Copiamos el correo al portapapeles
+    navigator.clipboard.writeText('almadaroy19@gmail.com');
+
+    // Mostramos feedback visual
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // El mensaje desaparece en 2 segundos
+  };
 
   return (
     <section role="Presenación" id="Hero" className="w-full h-screen py-10">
@@ -74,16 +83,18 @@ export default function Hero() {
         </div>
 
         <a
+          href="mailto:almadaroy19@gmail.com?subject=%C2%A1Hola%20Roy!%20%C2%BFcuando%20tienes%20tiempo%20para%20una%20entrevista%3F"
           data-interactive="true"
-          target="_blank"
-          title="Enlace para Contratarme"
+          title="Haz clic para enviar correo o copiar dirección"
           aria-label="Enlace hacia Gmail para Contratarme"
-          className="flex justify-center items-center bg-indigo-800 font-inconsolata tracking-widest h-12 w-52 text-xl text-gray-300 py-2 px-4 rounded-xl hireMeButtonAnimation"
-          href="mailto:almadaroy19@gmail.com?subject=¡Hola Roy!%20¿cuando%20tienes%20tiempo%20para%20una%20entrevista?."
+          className={`flex justify-center items-center font-inconsolata tracking-widest h-12 w-52 text-xl py-2 px-4 rounded-xl hireMeButtonAnimation transition-colors duration-300 ${
+            copied ? 'bg-indigo-800 text-white' : 'bg-indigo-800 text-gray-300'
+          }`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          onClick={handleContactClick}
         >
-          Hire Me!
+          {copied ? 'Mail Copied!' : 'Hire Me!'}
         </a>
       </section>
     </section>

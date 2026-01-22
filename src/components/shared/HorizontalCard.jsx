@@ -31,7 +31,7 @@ function ProjectCard({
 
   return (
     <div
-      className="group relative bg-indigo-900 rounded-2xl overflow-hidden w-full mx-auto transition-all duration-500 border-2 border-indigo-400/70"
+      className="group relative bg-indigo-900 overflow-hidden w-full mx-auto transition-all duration-500 border-2 border-indigo-400/70"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{

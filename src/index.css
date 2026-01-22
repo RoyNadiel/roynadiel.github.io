@@ -1,101 +1,106 @@
 @import 'tailwindcss';
 
-@font-face{
+@font-face {
   font-family: Inconsolata;
-  src: url("./assets/fonts/Inconsolata-Regular.woff2");
-  display: swap;  
+  src: url('./assets/fonts/Inconsolata-Regular.woff2');
+  display: swap;
 }
-@font-face{
+@font-face {
   font-family: Monserrat Alternates;
-  src: url("./assets/fonts/MontserratAlternates-Regular.woff2");
+  src: url('./assets/fonts/MontserratAlternates-Regular.woff2');
   display: swap;
 }
-@font-face{
+@font-face {
   font-family: Libertinus Mono;
-  src: url("./assets/fonts/LibertinusMono-Regular.woff2");
+  src: url('./assets/fonts/LibertinusMono-Regular.woff2');
   display: swap;
 }
-@font-face{
+@font-face {
   font-family: Fira Code;
-  src: url("./assets/fonts/FiraCode-VariableFont_wght.woff2");
+  src: url('./assets/fonts/FiraCode-VariableFont_wght.woff2');
   display: swap;
 }
-@font-face{
+@font-face {
   font-family: League Spartan;
-  src: url("./assets/fonts/LeagueSpartan-Regular.woff2");
+  src: url('./assets/fonts/LeagueSpartan-Regular.woff2');
   display: swap;
 }
 
-@theme{
-        /* FUENTES */
+@theme {
+  /* FUENTES */
   --font-inconsolata: Inconsolata, 'mono';
   --font-libertinus: Libertinus Mono, 'sans';
   --font-montserrat-alt: Monserrat Alternates, 'sans';
   --font-fira-code: Fira Code, 'mono';
   --font-league-spartan: League Spartan, 'serif';
-        /* BREAKPOINTS */
-  --breakpoint-max-width: 1600px;        
+  /* BREAKPOINTS */
+  --breakpoint-max-width: 1600px;
 }
 
 .navlink {
   @apply text-pink-500 font-inconsolata md:text-xl transition duration-200 hover:scale-105 tracking-widest;
 }
-.hireMeButtonAnimation{
+.hireMeButtonAnimation {
   transition: all 0.5s ease-in-out;
 }
-.hireMeButtonAnimation:hover{
+.hireMeButtonAnimation:hover {
   box-shadow: 0 0 40px #f01cff;
   background-color: #f01cff;
   color: white;
   transform: scale(1.1);
 }
 
-.iconViteAnimation:hover{
-  animation: iconViteAnimation .5s forwards ease-in-out;
+.iconViteAnimation:hover {
+  animation: iconViteAnimation 0.5s forwards ease-in-out;
 }
-@keyframes iconViteAnimation{
-  from{
+@keyframes iconViteAnimation {
+  from {
     transform: translateY(-5px);
   }
-  50%{
+  50% {
     transform: translateY(5px);
   }
-  to{
+  to {
     transform: translateY(0px);
   }
 }
-.iconReactHover{
+.iconReactHover {
   transform: rotate(360deg);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.iconReactHover:hover{  
+.iconReactHover:hover {
   filter: drop-shadow(0 0 1px skyblue);
   animation: 3s ease forwards rotateIn;
 }
-@media(width >= 48rem){
-.scaleSmoothly{
-  transition: transform .5s ease;
+@media (width >= 48rem) {
+  .scaleSmoothly {
+    transition: transform 0.5s ease;
+  }
+  .scaleSmoothly:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+  }
 }
-.scaleSmoothly:hover{
-  transition: transform .5s ease;
-  transform: scale(1.1);
-} 
-}
-@keyframes rotateIn{
- from{
+@keyframes rotateIn {
+  from {
     transform: rotate(0);
- }
- to{
+  }
+  to {
     transform: rotate(360deg);
- }
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #FF6467; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff6467;
+  }
 }
 
-.skillsImg{
+.skillsImg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,9 +109,10 @@
 }
 
 :root {
-  font-family: 'Microsoft JhengHei UI',system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:
+    'Microsoft JhengHei UI', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;    
+  font-weight: 400;
   scroll-behavior: smooth;
 
   color-scheme: light dark;
@@ -119,13 +125,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (width >= 1072px){
+@media (width >= 1072px) {
   .reflect-image {
-      /* Reflejo hacia abajo, 2px de separación y desvanecimiento */
-      -webkit-box-reflect: below 3px linear-gradient(transparent, rgba(0,0,0,0.5));
-    }
+    /* Reflejo hacia abajo, 2px de separación y desvanecimiento */
+    -webkit-box-reflect: below 3px
+      linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  }
 }
-
 
 body {
   margin: 0;
@@ -133,7 +139,7 @@ body {
   color: white;
   box-sizing: border-box;
   background-size: cover;
-  background: linear-gradient(to top right, #1E1A4D,#3C0366,#1E1A4D);
+  background: linear-gradient(to top right, #1e1a4d, #3c0366, #1e1a4d);
 }
 
 /* @media (prefers-color-scheme: light) {

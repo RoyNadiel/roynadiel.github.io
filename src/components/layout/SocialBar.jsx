@@ -6,7 +6,7 @@ export default function SocialBar() {
       className="fixed bottom-0 w-full flex justify-center items-center gap-10 z-20 backdrop-blur-sm
             xl:flex-col xl:w-fit xl:top-5 xl:right-3 xl:bottom-5"
     >
-      <div className="relative grow h-0.5 xl:w-0.5 bg-indigo-400/70"></div>
+      <div className="relative grow h-0.5 xl:w-0.5 bg-indigo-400/70 overflow-hidden"></div>
 
       <a
         className="w-5 h-6 xl:w-8 hover:scale-130"
@@ -71,7 +71,9 @@ export default function SocialBar() {
       </a>
       <a
         className="w-5 h-6 xl:w-8 hover:scale-130"
+        target="_blank"
         href="https://wa.me/584121951892?text=Hola,%20vi%20tu%20portafolio%20y%20me%20gustaría%20saber%20más."
+        rel="noopener noreferrer"
         aria-label="Red Social Whatsapp"
       >
         <svg
