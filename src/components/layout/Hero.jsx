@@ -1,6 +1,7 @@
 import Polygon from '../shared/Polygon';
 import { useState } from 'react';
 import TypingEffect from '../shared/TypyingEffect.jsx';
+import { File } from 'lucide-react';
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
@@ -31,7 +32,7 @@ export default function Hero() {
                         md:flex-row"
           >
             <strong>
-              <TypingEffect text="FullStack Developer" typingSpeed={150} />
+              <TypingEffect text="Front-End Developer" typingSpeed={150} />
             </strong>
             <svg
               className="w-15 md:w-20 shrink-0 md:flex hidden"
@@ -82,20 +83,35 @@ export default function Hero() {
           </p>
         </div>
 
-        <a
-          href="mailto:almadaroy19@gmail.com?subject=%C2%A1Hola%20Roy!%20%C2%BFcuando%20tienes%20tiempo%20para%20una%20entrevista%3F"
-          data-interactive="true"
-          title="Haz clic para enviar correo o copiar dirección"
-          aria-label="Enlace hacia Gmail para Contratarme"
-          className={`flex justify-center items-center font-inconsolata tracking-widest h-12 w-52 text-xl py-2 px-4 rounded-xl hireMeButtonAnimation transition-colors duration-300 ${
-            copied ? 'bg-indigo-800 text-white' : 'bg-indigo-800 text-gray-300'
-          }`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          onClick={handleContactClick}
-        >
-          {copied ? 'Mail Copied!' : 'Hire Me!'}
-        </a>
+        <div className="inline-flex gap-5 items-center">
+          <a
+            href="mailto:almadaroy19@gmail.com?subject=%C2%A1Hola%20Roy!%20%C2%BFcuando%20tienes%20tiempo%20para%20una%20entrevista%3F"
+            data-interactive="true"
+            title="Haz clic para enviar correo o copiar dirección"
+            aria-label="Enlace hacia Gmail para Contratarme"
+            className={`flex justify-center items-center font-inconsolata tracking-widest h-12 w-52 text-xl py-2 px-4 rounded-xl hireMeButtonAnimation transition-colors duration-300 ${
+              copied
+                ? 'bg-indigo-700 text-white'
+                : 'bg-indigo-700 text-gray-200'
+            }`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            onClick={handleContactClick}
+          >
+            {copied ? 'Mail Copied!' : 'Hire Me!'}
+          </a>
+          <a
+            href="https://cv.almadaroy19.workers.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-52 h-12 inline-flex items-center gap-1 py-2 px-4 text-xl font-inconsolata tracking-widest rounded-xl bg-indigo-800 text-gray-200 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer hireMeButtonAnimation"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <File />
+            Descargar CV
+          </a>
+        </div>
       </section>
     </section>
   );

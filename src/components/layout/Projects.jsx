@@ -71,7 +71,7 @@ export default function Projects() {
       skillsUsed: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers'],
       mainSkill: 'TS',
       githubUrl: 'https://github.com/RoyNadiel/CV',
-      projectUrl: 'https://curriculum.almadaroy19.workers.dev',
+      projectUrl: 'https://cv.almadaroy19.workers.dev',
       status: 'Completado',
       duration: '1 Mes',
       complexity: 'medium',
