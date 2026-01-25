@@ -93,8 +93,6 @@ export default function Projects() {
     },
   ];
 
-  console.log(Projects);
-
   return (
     <section
       role="Projects"

@@ -43,7 +43,7 @@ export default function Hero() {
           <p className="max-w-200 text-lg font-fira-code text-red-400">
             Experiencia en desarrollo web y apps de escritorio.
           </p>
-          <p className="max-w-200 text-xl font-libertinus text-blue-500 mt-6">
+          <p className="max-w-200 text-lg md:text-xl font-libertinus text-blue-500 mt-6">
             Platón es mi amigo, pero es más amiga la verdad.
           </p>
           <p className="max-w-200 text-xl font-fira-code text-blue-500 font-bold">
@@ -57,7 +57,7 @@ export default function Hero() {
             data-interactive="true"
             title="Haz clic para enviar correo o copiar dirección"
             aria-label="Enlace hacia Gmail para Contratarme"
-            className={`flex justify-center items-center font-inconsolata tracking-widest h-12 w-52 text-xl py-2 px-4 rounded-xl hireMeButtonAnimation transition-colors duration-300 ${
+            className={`flex justify-center items-center font-inconsolata tracking-widest h-10 md:h-12 w-fit md:w-52 text-base md:text-xl py-2 px-4 rounded-xl hireMeButtonAnimation transition-colors duration-300 ${
               copied
                 ? 'bg-indigo-700 text-white'
                 : 'bg-indigo-700 text-gray-200'
@@ -72,7 +72,7 @@ export default function Hero() {
             href="https://cv.almadaroy19.workers.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-52 h-12 inline-flex items-center gap-1 py-2 px-4 text-xl font-inconsolata tracking-widest rounded-xl bg-indigo-800 text-gray-200 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer hireMeButtonAnimation"
+            className="w-fit md:w-52 h-10 md:h-12 inline-flex items-center gap-2 py-2 px-4 text-base md:text-xl font-inconsolata tracking-widest rounded-xl bg-indigo-800 text-gray-200 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer hireMeButtonAnimation"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
