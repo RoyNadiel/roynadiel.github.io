@@ -53,7 +53,7 @@ export default function SocialBar() {
         </svg>
       </a>
       <a
-        href="https://www.linkedin.com/in/roy-almada-397a19186/"
+        href="https://www.linkedin.com/in/roy-nadiel/"
         target="_blank"
         aria-label="Red Social LinkedIn"
         className="w-5 h-6 xl:w-8 hover:scale-130"
