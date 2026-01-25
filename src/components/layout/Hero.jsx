@@ -24,7 +24,12 @@ export default function Hero() {
         className="h-full flex flex-col justify-around items-center text-center px-5 md:px-10"
       >
         <Polygon
-          className={`${isHovered ? 'bg-[#f01cff] transition-all duration-500 ease-in-out scale-110' : 'bg-indigo-800 transition-all duration-500 ease-in-out shrink-0'}`}
+          isHovered={isHovered}
+          className={`${
+            isHovered
+              ? 'bg-[#f01caf] transition-all duration-1000 ease-in-out scale-110'
+              : 'bg-blue-600 transition-all duration-500 ease-in-out shrink-0'
+          }`}
         />
 
         <div className="flex flex-col items-center">

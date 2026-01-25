@@ -39,7 +39,7 @@ export default function SocialBar() {
       </a>
       <a
         className="w-5 h-6 xl:w-8 hover:scale-120 transition"
-        href="https://wa.me/584121951892?text=Hola,%20vi%20tu%20portafolio%20y%20me%20gustaría%20saber%20más."
+        href="https://wa.me/584121951892?text=Hola%20Roy,%20encontré%20tu%20portafolio%20y%20me%20gustaría%20conversar%20contigo."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Red Social Whatsapp"
