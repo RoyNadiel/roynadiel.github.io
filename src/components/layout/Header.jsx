@@ -16,7 +16,9 @@ export default function Header() {
         className="text-xl font-montserrat-alt text-pink-500
                 lg:text-2xl xl:text-3xl"
       >
-        ROY NADIEL A<span className="text-sky-400 text-3xl">.</span>
+        <strong>
+          ROY NADIEL A<span className="text-sky-400 text-3xl">.</span>
+        </strong>
       </h1>
       <nav
         className="inline-flex justify-center gap-3 flex-wrap md:gap-8 md:flex-nowrap"
