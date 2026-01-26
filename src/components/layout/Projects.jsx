@@ -22,7 +22,7 @@ export default function Projects() {
     {
       id: 2,
       name: 'WrittingJS',
-      src: './projects/WrittingJS.mp4',
+      src: './projects/Writtingjs.webp',
       description:
         'Entorno de desarrollo interactivo para JavaScript inspirado en RunJS. Incluye editor de código con Monaco Editor, ejecución en tiempo real, y validaciones estrictas que fomentan las mejores prácticas de programación. Ideal para aprender, experimentar y prototipar código JavaScript de forma rápida y segura.',
       skillsUsed: ['Vanilla', 'JavaScript', 'HTML', 'CSS', 'Monaco Editor'],
@@ -35,16 +35,17 @@ export default function Projects() {
     },
     {
       id: 3,
-      name: 'Chess Game',
-      src: './projects/Chess.mp4',
+      name: 'CV',
+      src: './projects/CV.mp4',
       description:
-        'Implementación completa del juego de ajedrez para dos jugadores desarrollada en WPF. Incluye validación de movimientos legales, detección de jaque y jaque mate, y una interfaz gráfica elegante. En desarrollo: modo multijugador en línea mediante sockets TCP para partidas remotas en tiempo real.',
-      skillsUsed: ['.NET', 'C#', 'WPF', 'XAML'],
-      mainSkill: 'C#',
-      githubUrl: 'https://github.com/RoyNadiel/Chess',
-      status: 'En Progreso',
-      duration: '2 Meses',
-      complexity: 'high',
+        'Currículum vitae interactivo renderizado como PDF en el navegador. Desarrollado con React y TypeScript, desplegado en Cloudflare Workers para máxima velocidad y disponibilidad global. Utiliza Hono como framework backend ligero, ofreciendo una presentación profesional de habilidades y experiencia con carga instantánea.',
+      skillsUsed: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers'],
+      mainSkill: 'TS',
+      githubUrl: 'https://github.com/RoyNadiel/CV',
+      projectUrl: 'https://cv.almadaroy19.workers.dev',
+      status: 'Completado',
+      duration: '1 Mes',
+      complexity: 'medium',
       targetAudience: 'Todos',
     },
     {
@@ -64,32 +65,17 @@ export default function Projects() {
     },
     {
       id: 5,
-      name: 'CV',
-      src: './projects/CV.mp4',
+      name: 'Chess Game',
+      src: './projects/Chess.mp4',
       description:
-        'Currículum vitae interactivo renderizado como PDF en el navegador. Desarrollado con React y TypeScript, desplegado en Cloudflare Workers para máxima velocidad y disponibilidad global. Utiliza Hono como framework backend ligero, ofreciendo una presentación profesional de habilidades y experiencia con carga instantánea.',
-      skillsUsed: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers'],
-      mainSkill: 'TS',
-      githubUrl: 'https://github.com/RoyNadiel/CV',
-      projectUrl: 'https://cv.almadaroy19.workers.dev',
-      status: 'Completado',
-      duration: '1 Mes',
-      complexity: 'medium',
-      targetAudience: 'Todos',
-    },
-    {
-      id: 6,
-      name: 'Writer',
-      src: './projects/Writer.mp4',
-      description:
-        'Editor de texto de escritorio inspirado en el Bloc de Notas de Windows, desarrollado con tecnologías .NET. Ofrece funcionalidades esenciales como crear, abrir, editar y guardar archivos de texto, con una interfaz limpia y familiar. Implementa operaciones de sistema de archivos nativas para una experiencia fluida.',
-      skillsUsed: ['.NET', 'C#', 'WPF', 'XAML', 'File System'],
+        'Implementación completa del juego de ajedrez para dos jugadores desarrollada en WPF. Incluye validación de movimientos legales, detección de jaque y jaque mate, y una interfaz gráfica elegante. En desarrollo: modo multijugador en línea mediante sockets TCP para partidas remotas en tiempo real.',
+      skillsUsed: ['.NET', 'C#', 'WPF', 'XAML'],
       mainSkill: 'C#',
-      githubUrl: 'https://github.com/RoyNadiel/Notes',
-      status: 'Completado',
-      duration: '1 Mes',
-      complexity: 'low',
-      targetAudience: 'Escritores',
+      githubUrl: 'https://github.com/RoyNadiel/Chess',
+      status: 'En Progreso',
+      duration: '2 Meses',
+      complexity: 'high',
+      targetAudience: 'Todos',
     },
   ];
 
@@ -98,7 +84,7 @@ export default function Projects() {
       role="Projects"
       id="Proyectos"
       className="w-full relative min-h-screen grid grid-cols-1 grid-rows-[auto_1fr] place-items-center gap-15 px-4 md:px-16 
-                md:grid-cols-1 md:grid-rows-[auto_1fr] md:gap-5"
+                lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-5"
     >
       <h4
         className="col-span-full inline-flex items-center gap-2 mt-25 text-center text-red-500 text-4xl font-montserrat-alt tracking-widest

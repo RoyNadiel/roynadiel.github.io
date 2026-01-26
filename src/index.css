@@ -40,14 +40,17 @@
 .navlink {
   @apply text-pink-500 font-inconsolata md:text-xl transition duration-200 hover:scale-105 tracking-widest;
 }
-.hireMeButtonAnimation {
+.heroButtonAnimation {
   transition: all 0.5s ease-in-out;
 }
-.hireMeButtonAnimation:hover {
-  box-shadow: 0 0 40px #f01cff;
-  background-color: #f01cff;
+.heroButtonAnimation:hover {
   color: white;
-  transform: scale(1.1);
+  box-shadow:
+    0 0 10px #f01cff,
+    0 0 20px #f01cff,
+    0 0 30px #f01cff;
+  background-color: #f01cff;
+  border: 1px solid #f01cdf;
 }
 
 .iconViteAnimation:hover {
@@ -125,7 +128,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (width >= 1072px) {
+@media (width >= 900px) {
   .reflect-image {
     /* Reflejo hacia abajo, 2px de separación y desvanecimiento */
     -webkit-box-reflect: below 3px

@@ -33,7 +33,7 @@ export default function Polygon({ className, isHovered }) {
       className="polygon-wrapper relative flex justify-center items-center"
     >
       <div
-        className={`z-10 transition-all duration-500 ${isHovered ? 'drop-shadow-[0_0_40px_rgba(240,28,255,0.8)]' : ''}`}
+        className={`z-10 transition-all duration-1000 ${isHovered ? 'drop-shadow-[0_0_10px_rgba(240,28,255,0.8),_0_0_20px_rgba(240,28,255,0.8),_0_0_40px_rgba(240,28,255,0.8)]' : ''}`}
       >
         <div className={`polygon w-16 h-32 md:w-22 md:h-40 ${className}`}></div>
       </div>

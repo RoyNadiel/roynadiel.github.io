@@ -17,6 +17,11 @@ function ProjectCard({
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
+  const isVideo = (src) => {
+    if (!src) return false;
+    const extension = src.split('.').pop().toLowerCase();
+    return ['mp4', 'webm', 'ogg', 'mov'].includes(extension);
+  };
   const complexityColor = {
     low: 'bg-green-50 text-green-700 border-green-200',
     medium: 'bg-yellow-50 text-yellow-700 border-yellow-200',
@@ -31,7 +36,7 @@ function ProjectCard({
 
   return (
     <div
-      className="group relative bg-indigo-900 overflow-hidden w-full mx-auto transition-all duration-500 border-2 border-indigo-400/70"
+      className="group w-full h-full relative bg-indigo-900 overflow-hidden mx-auto transition-all duration-500 border-2 border-indigo-400/70"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -42,17 +47,25 @@ function ProjectCard({
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-      <div className="flex flex-col md:flex-row relative z-10">
+      <div className="flex flex-col items-center relative z-10 max-w-4xl">
         {/*VIDEO*/}
-        <div className="relative w-full md:w-1/2 overflow-hidden bg-transparent group/video">
-          <video
-            src={src}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-fill group-hover/video:scale-110 transition-transform duration-700"
-          />
+        <div className="relative max-w-4xl aspect-video overflow-hidden bg-transparent group/video">
+          {isVideo(src) ? (
+            <video
+              src={src}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-fill group-hover/video:scale-110 transition-transform duration-700"
+            />
+          ) : (
+            <img
+              src={src}
+              alt={name}
+              className="w-full h-full object-fill group-hover/video:scale-110 transition-transform duration-700"
+            />
+          )}
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover/video:opacity-100 transition-opacity duration-500" />
 
