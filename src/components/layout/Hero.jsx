@@ -64,7 +64,7 @@ export default function Hero() {
             aria-label="Enlace hacia Gmail para Contratarme"
             className={`flex justify-center items-center gap-x-2 font-inconsolata tracking-widest h-10 md:h-12 w-38 md:w-48 text-sm md:text-xl py-2 px-4 rounded-xl heroButtonAnimation transition-colors duration-300 ${
               copied
-                ? 'text-white'
+                ? 'bg-indigo-700 border border-indigo-700 text-white'
                 : 'bg-indigo-700 border border-indigo-700 text-gray-200'
             }`}
             onMouseEnter={() => setIsHovered(true)}

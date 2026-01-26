@@ -60,13 +60,27 @@ function TypingEffect({
   ]);
 
   return (
-    <span
-      className="border-r-2 border-red-500 animate-[blink-caret_1.25s_step-end_infinite] mr-1 whitespace-pre-wrap"
-      /* IMPORTANTE: 'whitespace-pre-wrap' permite que los caracteres \n 
-         se rendericen como saltos de línea reales.
-      */
-    >
-      {displayedText}
+    <span className="whitespace-pre-wrap relative inline-block">
+      {text.split('').map((char, i) => (
+        <span
+          key={i}
+          className="transition-opacity duration-100"
+          style={{
+            opacity: i < index ? 1 : 0,
+            visibility: i < index ? 'visible' : 'hidden',
+          }}
+        >
+          {char}
+          {/* Cursor posicionado después del último carácter visible */}
+          {i === index - 1 && (
+            <span className="absolute border-r-2 border-red-500 animate-[blink-caret_1.25s_step-end_infinite] h-[1.2em] -mt-[0.1em] ml-[1px]" />
+          )}
+        </span>
+      ))}
+      {/* Caso especial: Cursor al inicio */}
+      {index === 0 && (
+        <span className="absolute left-0 border-r-2 border-red-500 animate-[blink-caret_1.25s_step-end_infinite] h-[1.2em] -mt-[0.1em]" />
+      )}
     </span>
   );
 }
