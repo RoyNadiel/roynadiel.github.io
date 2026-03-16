@@ -35,12 +35,35 @@ export default function Projects() {
     },
     {
       id: 3,
+      name: 'Deshi',
+      src: './projects/Deshi.mp4',
+      description:
+        'Interfaz Web para el control de una Deshidratadora Electrica construida al rededor del Microcontrolador Wemos D1 Mini. Controlar le tiempo de Deshidratacion (15min - 24h), la temperatura objetivo (30°C - 70°C). Accionar ventiladores y controlar su velocidad via PWM através de un Mosfet según se necesite. Componentes para el desarrollo de la Deshiratadora en Github.',
+      skillsUsed: [
+        'ESP8266',
+        'Arduino IDE',
+        'C++',
+        'HTML',
+        'CSS',
+        'JavaScript',
+      ],
+      mainSkill: 'C++',
+      githubUrl: 'https://github.com/RoyNadiel/Deshi',
+      projectUrl: '',
+      status: 'Completado',
+      duration: '1 Mes',
+      complexity: 'medium',
+      targetAudience: 'Todos',
+    },
+    {
+      id: 4,
       name: 'QuoteCreator',
       src: './projects/QuoteCreator.png',
       description:
         'Plataforma web interactiva para la creación y personalización de citas inspiradoras. Permite a los usuarios generar imágenes de citas con estilos personalizables, fuentes variadas y fondos atractivos. Ideal para compartir contenido en redes sociales con un diseño profesional y moderno.',
       skillsUsed: ['React', 'TypeScript', 'TailwindCSS', 'HTML2CANVAS'],
       mainSkill: 'TS',
+      githubUrl: 'https://github.com/RoyNadiel/QuoteCreator',
       projectUrl: 'https://quotecreator.roynadiel.workers.dev/',
       status: 'Escalable',
       duration: 'MVP in 3 Days',
@@ -48,7 +71,7 @@ export default function Projects() {
       targetAudience: 'Todos',
     },
     {
-      id: 4,
+      id: 5,
       name: 'CV',
       src: './projects/CV.mp4',
       description:
@@ -62,35 +85,26 @@ export default function Projects() {
       complexity: 'medium',
       targetAudience: 'Todos',
     },
-    {
-      id: 5,
-      name: 'Island Store',
-      src: './projects/IslandStore.mp4',
-      description:
-        'Plataforma de comercio electrónico full-stack con arquitectura moderna. Presenta catálogo de productos organizado por categorías, sistema de búsqueda y filtrado, y renderizado del lado del servidor (SSR) para optimizar SEO y rendimiento. Integra APIs REST para gestión de inventario y procesamiento de pedidos.',
-      skillsUsed: ['NextJS', 'TypeScript', 'TailwindCSS', 'Api Rest', 'SSR'],
-      mainSkill: 'TS',
-      githubUrl: 'https://github.com/RoyNadiel/ECommerce',
-      projectUrl: 'https://islandstore.vercel.app/',
-      status: 'Completado',
-      duration: '1 Mes',
-      complexity: 'low',
-      targetAudience: 'Consumidores',
-    },
-    {
-      id: 6,
-      name: 'Chess Game',
-      src: './projects/Chess.mp4',
-      description:
-        'Implementación completa del juego de ajedrez para dos jugadores desarrollada en WPF. Incluye validación de movimientos legales, detección de jaque y jaque mate, y una interfaz gráfica elegante. En desarrollo: modo multijugador en línea mediante sockets TCP para partidas remotas en tiempo real.',
-      skillsUsed: ['.NET', 'C#', 'WPF', 'XAML'],
-      mainSkill: 'C#',
-      githubUrl: 'https://github.com/RoyNadiel/Chess',
-      status: 'En Progreso',
-      duration: '2 Meses',
-      complexity: 'high',
-      targetAudience: 'Todos',
-    },
+    // {
+    //   id: 6,
+    //   name: 'WemosRC',
+    //   src: './projects/WemosRC.mp4',
+    //   description:
+    //     'Interfaz Web para el control de un carro a control remoto. Se inserta en el firmware de la placa de desarollo Wemos D1 Mini, la cual emitirá una red Wi-Fi (Nombre y Contraseña editables en el código disponible en github) para acceder a ella desde cualquier dispositivo con conexión a Wi-Fi y un navegador. ',
+    //   skillsUsed: [
+    //     'ESP8266',
+    //     'Arduino IDE',
+    //     'C++',
+    //     'HTML',
+    //     'CSS',
+    //     'JavaScript',
+    //   ],
+    //   mainSkill: 'C++',
+    //   status: 'Escalable',
+    //   duration: '1 Mes',
+    //   complexity: 'medium',
+    //   targetAudience: 'Todos',
+    // },
   ];
 
   return (
