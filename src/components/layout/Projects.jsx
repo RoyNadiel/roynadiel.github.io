@@ -35,6 +35,20 @@ export default function Projects() {
     },
     {
       id: 3,
+      name: 'QuoteCreator',
+      src: './projects/QuoteCreator.png',
+      description:
+        'Plataforma web interactiva para la creación y personalización de citas inspiradoras. Permite a los usuarios generar imágenes de citas con estilos personalizables, fuentes variadas y fondos atractivos. Ideal para compartir contenido en redes sociales con un diseño profesional y moderno.',
+      skillsUsed: ['React', 'TypeScript', 'TailwindCSS', 'HTML2CANVAS'],
+      mainSkill: 'TS',
+      projectUrl: 'https://quotecreator.roynadiel.workers.dev/',
+      status: 'Escalable',
+      duration: 'MVP in 3 Days',
+      complexity: 'medium',
+      targetAudience: 'Todos',
+    },
+    {
+      id: 4,
       name: 'CV',
       src: './projects/CV.mp4',
       description:
@@ -49,7 +63,7 @@ export default function Projects() {
       targetAudience: 'Todos',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Island Store',
       src: './projects/IslandStore.mp4',
       description:
@@ -64,7 +78,7 @@ export default function Projects() {
       targetAudience: 'Consumidores',
     },
     {
-      id: 5,
+      id: 6,
       name: 'Chess Game',
       src: './projects/Chess.mp4',
       description:

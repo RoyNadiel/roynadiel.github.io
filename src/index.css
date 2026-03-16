@@ -144,10 +144,3 @@ body {
   background-size: cover;
   background: linear-gradient(to top right, #1e1a4d, #3c0366, #1e1a4d);
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: indigo;
-  }
-} */
