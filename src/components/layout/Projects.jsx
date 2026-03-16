@@ -1,7 +1,7 @@
 import Card from '../shared/Card';
 import '../shared/Shapes.css';
 import { CodeIcon } from '../shared/SVG.jsx';
-import HorizontalCard from '../shared/HorizontalCard';
+import VerticalCard from '../shared/VerticalCard';
 
 export default function Projects() {
   const Projects = [
@@ -11,9 +11,18 @@ export default function Projects() {
       src: './projects/TasaActual.mp4',
       description:
         'Aplicación web de conversión de divisas en tiempo real para el mercado venezolano. Consulta tasas de cambio actualizadas del par Bolívar/Dólar mediante integración con APIs externas, ofreciendo cálculos precisos y una interfaz intuitiva para usuarios que necesitan información cambiaria confiable.',
-      skillsUsed: ['Vite', 'React', 'TailwindCSS', 'TypeScript', 'Api Rest'],
+      skillsUsed: [
+        'Vite',
+        'React',
+        'TailwindCSS',
+        'TypeScript',
+        'Api Rest',
+        '¡PlayStore!',
+      ],
       mainSkill: 'TS',
       projectUrl: 'https://tasaactual.com/',
+      playStoreUrl:
+        'https://play.google.com/store/apps/details?id=com.tasaactual.twa&hl=es_419',
       status: 'Escalable',
       duration: 'MVP - 1 Mes',
       complexity: 'medium',
@@ -38,7 +47,7 @@ export default function Projects() {
       name: 'Deshi',
       src: './projects/Deshi.mp4',
       description:
-        'Interfaz Web para el control de una Deshidratadora Electrica construida al rededor del Microcontrolador Wemos D1 Mini. Controlar le tiempo de Deshidratacion (15min - 24h), la temperatura objetivo (30°C - 70°C). Accionar ventiladores y controlar su velocidad via PWM através de un Mosfet según se necesite. Componentes para el desarrollo de la Deshiratadora en Github.',
+        'Interfaz Web para el control de una Deshidratadora Electrica construida al rededor del Microcontrolador Wemos D1 Mini. Es posible controlar el tiempo de Deshidratacion (15min - 24h), la temperatura objetivo (30°C - 70°C). Accionar ventiladores y controlar su velocidad via PWM a través de un Mosfet según se necesite. Componentes para el desarrollo de la Deshiratadora en Github.',
       skillsUsed: [
         'ESP8266',
         'Arduino IDE',
@@ -123,7 +132,7 @@ export default function Projects() {
       </h4>
 
       {Projects.map((project) => (
-        <HorizontalCard key={project.id} {...project} />
+        <VerticalCard key={project.id} {...project} />
       ))}
     </section>
   );

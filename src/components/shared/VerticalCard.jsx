@@ -10,6 +10,7 @@ function ProjectCard({
   skillsUsed,
   projectUrl,
   githubUrl,
+  playStoreUrl,
   status = 'completed',
   duration = '3 months',
   complexity = 'high',
@@ -196,9 +197,19 @@ function ProjectCard({
                 {skillsUsed.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-2 md:px-4 py-1 md:py-2 bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 text-[10px] md:text-xs font-semibold rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md hover:from-blue-50 hover:to-blue-100 transition-all duration-300 cursor-default"
+                    className={`px-2 md:px-4 py-1 md:py-2 ${skill === '¡PlayStore!' ? 'bg-gradient-to-r from-sky-300 via-red-300 to-amber-300 text-gray-900' : 'text-gray-700 bg-gradient-to-r from-gray-50 to-gray-100 hover:border-blue-300 hover:shadow-md hover:from-blue-50 hover:to-blue-100 transition-all duration-300  '} text-[10px] md:text-xs font-semibold rounded-md border border-gray-200  cursor-default`}
                   >
-                    {skill}
+                    {skill === '¡PlayStore!' ? (
+                      <a
+                        href={playStoreUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        ¡PlayStore!
+                      </a>
+                    ) : (
+                      skill
+                    )}
                   </span>
                 ))}
               </div>
