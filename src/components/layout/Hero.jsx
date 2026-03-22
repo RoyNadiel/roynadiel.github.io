@@ -2,13 +2,13 @@ import Polygon from '../shared/Polygon';
 import { useState } from 'react';
 import TypingEffect from '../shared/TypyingEffect.jsx';
 import { FileUser, Handshake } from 'lucide-react';
-import { CodeSVG } from '../shared/SVG.jsx';
+import { CodeIcon } from '../shared/SVG.jsx';
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const handleContactClick = (e) => {
+  const handleContactClick = () => {
     // Copiamos el correo al portapapeles
     navigator.clipboard.writeText('almadaroy19@gmail.com');
 
@@ -27,8 +27,8 @@ export default function Hero() {
           isHovered={isHovered}
           className={`${
             isHovered
-              ? 'bg-[#f01caf] transition-all duration-1000 ease-in-out scale-110'
-              : 'bg-blue-600 transition-all duration-500 ease-in-out shrink-0'
+              ? 'bg-[#ff91da] transition-all duration-1000 ease-in-out scale-110'
+              : 'bg-blue-500 transition-all duration-500 ease-in-out shrink-0'
           }`}
         />
 
@@ -40,12 +40,12 @@ export default function Hero() {
             <strong>
               <TypingEffect text={`Software Developer`} typingSpeed={100} />
             </strong>
-            <CodeSVG />
+            <CodeIcon />
           </h2>
-          <p className="max-w-200 text-lg font-fira-code text-red-400 mt-10 md:mt-2">
+          <p className="max-w-200 text-lg font-fira-code text-red-600 mt-10 md:mt-2">
             Autodidacta y Universitario.
           </p>
-          <p className="max-w-200 text-lg font-fira-code text-red-400">
+          <p className="max-w-200 text-lg font-fira-code text-red-600">
             Experiencia en desarrollo web y apps de escritorio.
           </p>
           <p className="max-w-200 text-lg md:text-xl font-libertinus text-blue-500 mt-6">
@@ -64,8 +64,8 @@ export default function Hero() {
             aria-label="Enlace hacia Gmail para Contratarme"
             className={`flex justify-center items-center gap-x-2 font-inconsolata tracking-widest h-10 md:h-12 w-38 md:w-48 text-sm md:text-xl py-2 px-4 rounded-xl heroButtonAnimation transition-colors duration-300 ${
               copied
-                ? 'bg-indigo-700 border border-indigo-700 text-white'
-                : 'bg-indigo-700 border border-indigo-700 text-gray-200'
+                ? 'bg-sky-700 border border-sky-700 text-white'
+                : 'bg-sky-700 border border-sky-700 text-gray-200'
             }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -81,10 +81,10 @@ export default function Hero() {
             )}
           </a>
           <a
-            href="https://cv.almadaroy19.workers.dev"
+            href="https://cv.roynadiel.workers.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit md:w-40 h-10 md:h-12 inline-flex items-center justify-center gap-2 py-2 px-4 text-sm md:text-xl font-inconsolata tracking-widest rounded-xl border border-indigo-500 text-gray-200 transition-colors duration-300 cursor-pointer heroButtonAnimation"
+            className="w-fit md:w-40 h-10 md:h-12 inline-flex items-center justify-center gap-2 py-2 px-4 text-sm md:text-xl font-inconsolata tracking-widest rounded-xl border-2 border-sky-500 transition-colors duration-300 cursor-pointer heroButtonAnimation"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >

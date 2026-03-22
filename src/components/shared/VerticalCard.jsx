@@ -37,7 +37,7 @@ function ProjectCard({
 
   return (
     <div
-      className="group w-full h-full relative bg-indigo-900 overflow-hidden mx-auto transition-all duration-500 border-2 border-indigo-400/70"
+      className="group w-full h-full relative bg-white/60 backdrop-blur-md overflow-hidden mx-auto transition-all duration-500 border-2 border-indigo-200"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -48,7 +48,7 @@ function ProjectCard({
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-      <div className="flex flex-col items-center relative z-10 max-w-4xl">
+      <div className="flex h-full flex-col items-center relative z-10 max-w-4xl">
         {/*VIDEO*/}
         <div className="relative max-w-4xl aspect-video overflow-hidden bg-transparent group/video">
           {isVideo(src) ? (
@@ -67,8 +67,6 @@ function ProjectCard({
               className="w-full h-full object-fill group-hover/video:scale-110 transition-transform duration-700"
             />
           )}
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover/video:opacity-100 transition-opacity duration-500" />
 
           <div className="absolute inset-0 opacity-0 group-hover/video:opacity-100 transition-opacity duration-500 flex items-center justify-center">
             <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover/video:scale-110 transition-transform duration-500">
@@ -112,7 +110,7 @@ function ProjectCard({
                         className="ml-4 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-110 flex-shrink-0"
                         aria-label="Ver proyecto"
                       >
-                        <GitHubSVG className="w-5 h-5" />
+                        <GitHubSVG className="w-5 h-5" fill="#fff" />
                       </a>
                     )}
 
@@ -149,12 +147,12 @@ function ProjectCard({
               </div>
             </div>
 
-            <p className="font-league-spartan text-gray-100 leading-relaxed mb-8 text-base md:text-xl">
+            <p className="font-league-spartan text-slate-700 leading-relaxed mb-8 text-base md:text-xl">
               {description}
             </p>
           </div>
 
-          <div className="space-y-6 border-t border-gray-100 pt-6">
+          <div className="space-y-6 border-t border-slate-200 pt-6">
             <div className="grid grid-cols-3 gap-2 md:gap-4">
               <div className="text-center p-2 md:p-3 rounded-lg bg-gradient-to-br from-blue-100 to-blue-200 group-hover:shadow-md transition-all duration-300">
                 <div className="text-[10px] md:text-xs text-gray-600 uppercase font-semibold tracking-wider mb-1">
@@ -190,7 +188,7 @@ function ProjectCard({
             </div>
 
             <div>
-              <h4 className="text-[10px] md:text-xs font-bold text-gray-100 uppercase tracking-widest mb-3 md:mb-4">
+              <h4 className="text-[10px] md:text-xs font-bold text-slate-800 uppercase tracking-widest mb-3 md:mb-4">
                 Tecnologías Utilizadas
               </h4>
               <div className="flex flex-wrap gap-2">

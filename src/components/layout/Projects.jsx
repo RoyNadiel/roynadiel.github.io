@@ -62,11 +62,11 @@ export default function Projects() {
       status: 'Completado',
       duration: '1 Mes',
       complexity: 'medium',
-      targetAudience: 'Todos',
+      targetAudience: 'Mecatrónica',
     },
     {
       id: 4,
-      name: 'QuoteCreator',
+      name: 'Quote Creator',
       src: './projects/QuoteCreator.png',
       description:
         'Plataforma web interactiva para la creación y personalización de citas inspiradoras. Permite a los usuarios generar imágenes de citas con estilos personalizables, fuentes variadas y fondos atractivos. Ideal para compartir contenido en redes sociales con un diseño profesional y moderno.',
@@ -75,9 +75,9 @@ export default function Projects() {
       githubUrl: 'https://github.com/RoyNadiel/QuoteCreator',
       projectUrl: 'https://quotecreator.roynadiel.workers.dev/',
       status: 'Escalable',
-      duration: 'MVP in 3 Days',
+      duration: 'MVP - 10 Dias',
       complexity: 'medium',
-      targetAudience: 'Todos',
+      targetAudience: 'Escritores',
     },
     {
       id: 5,

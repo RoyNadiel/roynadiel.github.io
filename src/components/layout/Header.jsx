@@ -22,7 +22,7 @@ export default function Header() {
         </strong>
       </h1>
       <nav
-        className="inline-flex justify-center gap-3 flex-wrap md:gap-8 md:flex-nowrap"
+        className="inline-flex justify-center items-center gap-3 flex-wrap md:gap-8 md:flex-nowrap"
         data-interactive="true"
       >
         <a

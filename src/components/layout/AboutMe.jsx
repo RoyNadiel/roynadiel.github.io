@@ -175,8 +175,8 @@ export default function AboutMe() {
       </h2>
 
       <article className="mx-auto max-w-6xl w-full">
-        <div className="bg-indigo-950/40 backdrop-blur-sm border border-indigo-500/30 p-8 rounded mb-12 shadow-2xl">
-          <p className="text-blue-200 text-lg md:text-2xl font-league-spartan mb-0 leading-relaxed">
+        <div className="bg-white/40 backdrop-blur-sm border border-indigo-100 p-8 rounded mb-12 shadow-lg">
+          <p className="text-slate-700 text-lg md:text-2xl font-league-spartan mb-0 leading-relaxed">
             Nací en el 99. Conocí la programación gracias a la universidad.
             Estando en ella he hecho varios proyectos, algunos en C, y la
             mayoría en C#. <br />
@@ -187,23 +187,23 @@ export default function AboutMe() {
         </div>
 
         <div className="mb-12">
-          <h3 className="text-blue-100 text-2xl md:text-3xl font-montserrat-alt mb-8 border-l-4 border-red-600 pl-4">
+          <h3 className="text-slate-800 text-2xl md:text-3xl font-montserrat-alt mb-8 border-l-4 border-red-600 pl-4">
             Pasatiempos
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Tarjeta Escritura */}
-            <div className="group relative bg-indigo-950/40 backdrop-blur-md border border-white/10 p-8 rounded transition-all duration-500 hover:border-red-500/50 hover:shadow-[0_0_40px_-15px_rgba(239,68,68,0.3)] overflow-hidden">
+            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded transition-all duration-500 hover:border-red-400 hover:shadow-lg overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-red-500/20 transition-all duration-500" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="p-4 bg-gradient-to-br from-red-500/20 to-red-600/10 rounded-full border border-red-500/20 group-hover:scale-110 transition-transform duration-500">
                     <PenTool className="text-red-400 w-7 h-7" />
                   </div>
-                  <h4 className="text-white text-2xl font-bold font-montserrat-alt">
+                  <h4 className="text-black text-2xl font-bold font-montserrat-alt">
                     Escritura
                   </h4>
                 </div>
-                <p className="text-blue-100/80 font-league-spartan text-lg leading-relaxed">
+                <p className="text-slate-600 font-league-spartan text-lg leading-relaxed">
                   Me gusta escribir; expresar ideas, sentimientos y pensamientos
                   en versos y prosa.
                 </p>
@@ -211,18 +211,18 @@ export default function AboutMe() {
             </div>
 
             {/* Tarjeta Música */}
-            <div className="group relative bg-indigo-950/40 backdrop-blur-md border border-white/10 p-8 rounded transition-all duration-500 hover:border-blue-500/50 hover:shadow-[0_0_40px_-15px_rgba(59,130,246,0.3)] overflow-hidden">
+            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded transition-all duration-500 hover:border-blue-400 hover:shadow-lg overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-blue-500/20 transition-all duration-500" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="p-4 bg-gradient-to-br from-blue-500/20 to-blue-600/10 rounded-full border border-blue-500/20 group-hover:scale-110 transition-transform duration-500">
                     <Music className="text-blue-400 w-7 h-7" />
                   </div>
-                  <h4 className="text-white text-2xl font-bold font-montserrat-alt">
+                  <h4 className="text-black text-2xl font-bold font-montserrat-alt">
                     Música
                   </h4>
                 </div>
-                <p className="text-blue-100/80 font-league-spartan text-lg leading-relaxed">
+                <p className="text-slate-600 font-league-spartan text-lg leading-relaxed">
                   Amo la música desde muy pequeño, y según Nietzsche, sin ella
                   la vida sería un error.
                 </p>
@@ -230,18 +230,18 @@ export default function AboutMe() {
             </div>
 
             {/* Tarjeta Ejercicio */}
-            <div className="group relative bg-indigo-950/40 backdrop-blur-md border border-white/10 p-8 rounded transition-all duration-500 hover:border-amber-500/50 hover:shadow-[0_0_40px_-15px_rgba(245,158,11,0.3)] overflow-hidden">
+            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded transition-all duration-500 hover:border-amber-400 hover:shadow-lg overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-amber-500/20 transition-all duration-500" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="p-4 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-full border border-amber-500/20 group-hover:scale-110 transition-transform duration-500">
                     <Dumbbell className="text-amber-400 w-7 h-7" />
                   </div>
-                  <h4 className="text-white text-2xl font-bold font-montserrat-alt">
+                  <h4 className="text-black text-2xl font-bold font-montserrat-alt">
                     Ejercicio
                   </h4>
                 </div>
-                <p className="text-blue-100/80 font-league-spartan text-lg leading-relaxed">
+                <p className="text-slate-600 font-league-spartan text-lg leading-relaxed">
                   Hago ejercicio, principalmente Calistenia. Me gusta estar en
                   forma y priorizo la salud.
                 </p>
@@ -258,12 +258,12 @@ export default function AboutMe() {
             {interests.map((interest, index) => (
               <div
                 key={index}
-                className={`flex items-center gap-3 px-6 py-4 bg-indigo-950/50 backdrop-blur-md border-2 rounded transition-all duration-300 cursor-default group hover:scale-105 ${interest.color} shadow-lg`}
+                className={`flex items-center gap-3 px-6 py-4 backdrop-blur-md border-2 rounded transition-all duration-300 cursor-default group hover:scale-105 ${interest.color} shadow-lg`}
               >
                 <div className="transition-transform duration-300 group-hover:rotate-12">
                   {interest.icon}
                 </div>
-                <span className="text-blue-100 font-league-spartan text-lg md:text-xl font-semibold">
+                <span className="font-league-spartan text-lg md:text-xl font-semibold">
                   {interest.title}
                 </span>
               </div>
