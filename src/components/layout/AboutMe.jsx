@@ -140,7 +140,7 @@ export default function AboutMe() {
       icon: <NextJS />,
       color: 'text-white',
       border: 'border-white',
-      bg: 'bg-white/10',
+      bg: 'bg-black/10',
       glow: 'rgba(255,255,255,0.4)',
     },
     {
@@ -251,7 +251,7 @@ export default function AboutMe() {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-blue-100 text-2xl md:text-3xl font-montserrat-alt mb-8 border-l-4 border-red-600 pl-4">
+          <h3 className="text-2xl md:text-3xl font-montserrat-alt mb-8 border-l-4 border-red-600 pl-4">
             Mis Intereses
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
@@ -273,7 +273,7 @@ export default function AboutMe() {
       </article>
 
       <div className="w-full max-w-6xl pb-10">
-        <h3 className="text-blue-100 text-center text-xl md:text-2xl font-montserrat-alt mb-10 opacity-80">
+        <h3 className="text-center text-xl md:text-2xl font-montserrat-alt mb-10 opacity-80">
           Tecnologías que utilizo
         </h3>
         <ul className="flex flex-wrap items-center justify-center gap-6 list-none list-inside col-span-full">

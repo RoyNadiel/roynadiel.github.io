@@ -38,7 +38,7 @@
 }
 
 .navlink {
-  @apply text-pink-500 font-inconsolata md:text-xl transition duration-200 hover:scale-105 tracking-widest;
+  @apply text-red-500 font-inconsolata md:text-xl transition duration-200 hover:scale-105 tracking-widest;
 }
 .heroButtonAnimation {
   transition: all 0.5s ease-in-out;
@@ -46,11 +46,11 @@
 .heroButtonAnimation:hover {
   color: white;
   box-shadow:
-    0 0 10px #e993cf,
-    0 0 20px #e993cf,
-    0 0 30px #e993cf;
-  background-color: #e993cf;
-  border: 1px solid #e993cf;
+    0 0 10px #ef4444,
+    0 0 20px #ef4444,
+    0 0 30px #ef4444;
+  background-color: #ef4444;
+  border: 1px solid #ef4444;
 }
 
 .iconViteAnimation:hover {
@@ -143,6 +143,8 @@ body {
   box-sizing: border-box;
   background-size: cover;
   background: linear-gradient(135deg, #bae6fd, #e0e7ff);
+  position: relative;
+  z-index: 0;
 }
 
 /* El contenedor de la barra (fondo) */

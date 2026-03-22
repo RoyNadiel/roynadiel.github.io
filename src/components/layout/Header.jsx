@@ -1,4 +1,4 @@
-import { React } from '../shared/SVG';
+import { React, TypeScript } from '../shared/SVG';
 
 export default function Header() {
   const handleReloadClick = () => {
@@ -14,7 +14,7 @@ export default function Header() {
       <h1
         onClick={handleReloadClick}
         data-interactive="true"
-        className="text-xl font-montserrat-alt text-pink-500
+        className="text-xl font-montserrat-alt text-red-500
                 lg:text-2xl xl:text-3xl"
       >
         <strong>
@@ -50,7 +50,7 @@ export default function Header() {
           SOBRE MÍ
         </a>
       </nav>
-      <div className="items-center gap-5 hidden lg:flex">
+      <div className="items-cente gap-x-2 hidden lg:flex">
         <a
           href="https://vite.dev/"
           target="_blank"
@@ -66,9 +66,21 @@ export default function Header() {
           href="https://react.dev/"
           target="_blank"
           data-interactive="true"
-          className="text-transparent hover:scale-115 iconReactHover w-6 lg:w-8"
+          className="text-transparent hover:scale-115 iconReactHover w-6 lg:w-7"
         >
           <React />
+        </a>
+
+        <p className="text-2xl text-sky-400">+</p>
+
+        <a
+          href="https://www.typescriptlang.org/"
+          rel="noopener"
+          target="_blank"
+          data-interactive="true"
+          className="text-transparent hover:scale-115 transition-all duration-300 hover:animate-bounce w-6 lg:w-7"
+        >
+          <TypeScript />
         </a>
       </div>
     </header>

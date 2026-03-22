@@ -43,7 +43,7 @@ export default function Polygon({ className, isHovered }) {
             key={i}
             className={`satellite sat-${i} transition-colors duration-500 ease-in-out ${
               isHovered
-                ? 'bg-[#f67eff] shadow-[0_0_15px_rgba(240,28,255,0.9)]'
+                ? 'bg-[#ff7563] shadow-[0_0_15px_rgba(240,28,255,0.9)]'
                 : 'bg-[#38bdf8] shadow-[0_0_15px_rgba(56,189,248,0.9)]'
             }`}
           ></div>

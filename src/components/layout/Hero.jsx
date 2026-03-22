@@ -1,8 +1,94 @@
 import Polygon from '../shared/Polygon';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import TypingEffect from '../shared/TypyingEffect.jsx';
-import { FileUser, Handshake } from 'lucide-react';
-import { CodeIcon } from '../shared/SVG.jsx';
+import { FileUser, Handshake, MapPin, Globe, Code2, Clock } from 'lucide-react';
+import { CodeIcon, VenezuelaFlag } from '../shared/SVG.jsx';
+
+const AvailabilityBadge = () => {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => setTime(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const timeString = time.toLocaleTimeString('es-VE', {
+    hour: '2-digit',
+    minute: '2-digit',
+  });
+
+  const dayString = time.toLocaleDateString('es-VE', {
+    weekday: 'long',
+  });
+
+  return (
+    <div className="hidden xl:flex absolute top-[15%] left-10 flex-col gap-3 z-20">
+      <div className="flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-md px-4 py-2 text-sm font-libertinus text-red-400">
+        <span className="relative flex h-3 w-3">
+          <span className="animate-ping absolute inline-flex h-full w-full bg-orange-400 opacity-75"></span>
+          <span className="relative inline-flex h-3 w-3 bg-orange-500"></span>
+        </span>
+        Disponibilidad Inmediata
+      </div>
+
+      <div className="flex items-center gap-2 bg-white/5 border border-white/10 backdrop-blur-md px-4 py-2 text-xs font-fira-code text-sky-800 w-fit ml-4">
+        <Clock className="w-4 h-4 text-sky-500" />
+        <span className="capitalize">{dayString}</span>, {timeString} Local
+      </div>
+    </div>
+  );
+};
+
+const FastStats = () => {
+  return (
+    <div className="hidden xl:flex absolute bottom-1/6 left-10 flex-col gap-4 z-20">
+      <div className="group flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-md p-2 rounded-2xl hover:bg-white/10 transition-colors w-fit duration-300">
+        <div className="bg-sky-500/20 p-2.5 rounded-xl text-sky-400 group-hover:bg-sky-500/30 transition-colors">
+          <Code2 className="w-5 h-5" />
+        </div>
+        <div className="flex flex-col pr-5">
+          <span className="text-[11px] text-gray-500 font-fira-code uppercase tracking-wider">
+            Experiencia
+          </span>
+          <span className="text-sm font-bold text-red-400">+1 Año Dev</span>
+        </div>
+      </div>
+
+      <a
+        className="group flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-md p-2 rounded-2xl hover:bg-white/10 transition-colors w-fit ml-6 duration-300"
+        href="https://cert.efset.org/en/4fxqHD"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-interactive="true"
+        title="Ver certificado de nivel de inglés"
+      >
+        <div className="bg-red-500/20 p-2.5 rounded-xl text-red-500 group-hover:bg-red-500/30 transition-colors">
+          <Globe className="w-5 h-5" />
+        </div>
+        <div className="flex flex-col pr-5">
+          <span className="text-[11px] text-gray-500 font-fira-code uppercase tracking-wider">
+            Inglés
+          </span>
+          <span className="text-sm font-bold text-red-400">B2 Intermedio</span>
+        </div>
+      </a>
+
+      <div className="group flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-md p-2 rounded-2xl hover:bg-white/10 transition-colors w-fit duration-300">
+        <div className="bg-red-500/20 p-2.5 rounded-xl text-red-500 group-hover:bg-red-500/30 transition-colors">
+          <MapPin className="w-5 h-5" />
+        </div>
+        <div className="flex flex-col pr-5">
+          <span className="text-[11px] text-gray-500 font-fira-code uppercase tracking-wider">
+            Ubicación
+          </span>
+          <span className="text-sm font-bold text-red-400 inline-flex items-center gap-x-1">
+            Venezuela <VenezuelaFlag /> | Remoto
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
@@ -18,16 +104,23 @@ export default function Hero() {
   };
 
   return (
-    <section role="Presenación" id="Hero" className="w-full h-screen py-10">
+    <section
+      role="Presenación"
+      id="Hero"
+      className="relative w-full h-screen py-10"
+    >
+      <AvailabilityBadge />
+      <FastStats />
+
       <section
         role="Centro, Presentación"
-        className="h-full flex flex-col justify-around items-center text-center px-5 md:px-10"
+        className="h-full flex flex-col justify-around items-center text-center px-5 md:px-10 relative z-10"
       >
         <Polygon
           isHovered={isHovered}
           className={`${
             isHovered
-              ? 'bg-[#ff91da] transition-all duration-1000 ease-in-out scale-110'
+              ? 'bg-red-500 transition-all duration-1000 ease-in-out scale-110 shadow-[0_0_30px_rgba(239,68,68,0.5)]'
               : 'bg-blue-500 transition-all duration-500 ease-in-out shrink-0'
           }`}
         />
@@ -43,10 +136,10 @@ export default function Hero() {
             <CodeIcon />
           </h2>
           <p className="max-w-200 text-lg font-fira-code text-red-600 mt-10 md:mt-2">
-            Autodidacta y Universitario.
+            Autodidacta Desarrollador de Software.
           </p>
           <p className="max-w-200 text-lg font-fira-code text-red-600">
-            Experiencia en desarrollo web y apps de escritorio.
+            Orientado a la Web.
           </p>
           <p className="max-w-200 text-lg md:text-xl font-libertinus text-blue-500 mt-6">
             Platón es mi amigo, pero es más amiga la verdad.
@@ -65,7 +158,7 @@ export default function Hero() {
             className={`flex justify-center items-center gap-x-2 font-inconsolata tracking-widest h-10 md:h-12 w-38 md:w-48 text-sm md:text-xl py-2 px-4 rounded-xl heroButtonAnimation transition-colors duration-300 ${
               copied
                 ? 'bg-sky-700 border border-sky-700 text-white'
-                : 'bg-sky-700 border border-sky-700 text-gray-200'
+                : 'bg-sky-700 border border-sky-700 text-white'
             }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
