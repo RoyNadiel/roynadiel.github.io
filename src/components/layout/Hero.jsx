@@ -1,8 +1,9 @@
 import Polygon from '../shared/Polygon';
 import { useState, useEffect } from 'react';
 import TypingEffect from '../shared/TypyingEffect.jsx';
-import { FileUser, Handshake, MapPin, Globe, Code2, Clock } from 'lucide-react';
+import { FileUser, Handshake, MapPin, Code2, Clock } from 'lucide-react';
 import { CodeIcon, VenezuelaFlag } from '../shared/SVG.jsx';
+import { ExternalLink } from 'lucide-react';
 
 const AvailabilityBadge = () => {
   const [time, setTime] = useState(new Date());
@@ -63,7 +64,7 @@ const FastStats = () => {
         title="Ver certificado de nivel de inglés"
       >
         <div className="bg-red-500/20 p-2.5 rounded-xl text-red-500 group-hover:bg-red-500/30 transition-colors">
-          <Globe className="w-5 h-5" />
+          <ExternalLink size={18} className="text-red-500" />
         </div>
         <div className="flex flex-col pr-5">
           <span className="text-[11px] text-gray-500 font-fira-code uppercase tracking-wider">

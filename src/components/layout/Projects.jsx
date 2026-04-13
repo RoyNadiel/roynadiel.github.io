@@ -10,13 +10,14 @@ export default function Projects() {
       name: 'Tasa Actual',
       src: './projects/TasaActual.mp4',
       description:
-        'Aplicación web de conversión de divisas en tiempo real para el mercado venezolano. Consulta tasas de cambio actualizadas del par Bolívar/Dólar mediante integración con APIs externas, ofreciendo cálculos precisos y una interfaz intuitiva para usuarios que necesitan información cambiaria confiable.',
+        'Aplicación web de conversión de divisas en tiempo real para el mercado venezolano. Consulta tasas de cambio actualizadas del par Bolívar/Dólar mediante integración con nuestra propia API, ofreciendo cálculos precisos y una interfaz intuitiva para usuarios que necesitan información cambiaria confiable.',
       skillsUsed: [
-        'Vite',
         'React',
-        'TailwindCSS',
         'TypeScript',
-        'Api Rest',
+        'Axios',
+        'Cloudflare',
+        'Supabase',
+        'Api',
         '¡PlayStore!',
       ],
       mainSkill: 'TS',
