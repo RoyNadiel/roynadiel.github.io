@@ -49,12 +49,14 @@ export default function Experience() {
         <div className="md:col-span-6 lg:col-span-5 p-8 rounded-[2.5rem] bg-gradient-to-br from-emerald-50/80 to-teal-100/50 backdrop-blur-xl border border-emerald-200/50 shadow-lg hover:shadow-emerald-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
           <Database className="absolute -right-8 -bottom-8 w-48 h-48 text-emerald-500/10 group-hover:text-emerald-500/20 transition-colors duration-500 group-hover:scale-110" />
           <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6 shadow-sm border border-emerald-200 group-hover:rotate-6 transition-transform">
-              <Database className="w-7 h-7" />
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center shadow-sm border border-emerald-200 group-hover:rotate-6 transition-transform shrink-0">
+                <Database className="w-6 h-6 md:w-7 md:h-7" />
+              </div>
+              <h5 className="text-lg md:text-xl font-bold text-slate-800 tracking-tight leading-tight">
+                Bases de Datos Relacionales
+              </h5>
             </div>
-            <h5 className="text-xl font-bold text-slate-800 mb-3 tracking-tight">
-              Bases de Datos Relacionales
-            </h5>
             <p className="text-emerald-950/70 text-sm md:text-base font-medium leading-relaxed">
               Diseño de BD escalables en{' '}
               <strong className="text-emerald-800">
@@ -70,12 +72,14 @@ export default function Experience() {
         <div className="md:col-span-12 lg:col-span-8 p-8 md:p-10 rounded-[2.5rem] bg-gradient-to-br from-blue-50/80 to-indigo-100/50 backdrop-blur-xl border border-blue-200/50 shadow-lg hover:shadow-blue-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
           <Server className="absolute right-0 top-10 w-64 h-64 text-blue-500/5 group-hover:text-blue-500/10 transition-colors duration-500 group-hover:scale-110 -rotate-12" />
           <div className="relative z-10 md:w-3/4">
-            <div className="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center mb-6 shadow-sm border border-blue-200 group-hover:-rotate-6 transition-transform">
-              <Server className="w-7 h-7" />
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center shadow-sm border border-blue-200 group-hover:-rotate-6 transition-transform shrink-0">
+                <Server className="w-6 h-6 md:w-7 md:h-7" />
+              </div>
+              <h5 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight leading-tight">
+                Desarrollo Full-Stack & Edge Computing
+              </h5>
             </div>
-            <h5 className="text-2xl font-bold text-slate-800 mb-4 tracking-tight">
-              Desarrollo Full-Stack & Edge Computing
-            </h5>
             <p className="text-blue-950/70 text-base font-medium leading-relaxed">
               Construcción de interfaces modernas con{' '}
               <strong className="text-blue-800">React y TypeScript</strong>.
@@ -90,32 +94,34 @@ export default function Experience() {
 
         {/* Bloque 4: Hardware (Span 4) */}
         <div className="md:col-span-6 lg:col-span-4 p-8 rounded-[2.5rem] bg-gradient-to-br from-purple-50/80 to-fuchsia-100/50 backdrop-blur-xl border border-purple-200/50 shadow-lg hover:shadow-purple-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
-          <Cpu className="absolute -right-4 -bottom-4 w-40 h-40 text-purple-500/10 group-hover:text-purple-500/20 transition-colors duration-500 group-hover:rotate-12" />
+          <Cpu className="absolute -right-4 -bottom-4 w-26 h-26 text-purple-500/10 group-hover:text-purple-500/20 transition-colors duration-500 group-hover:rotate-12" />
           <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center mb-6 shadow-sm border border-purple-200 group-hover:scale-110 transition-transform">
-              <Cpu className="w-7 h-7" />
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center shadow-sm border border-purple-200 group-hover:scale-110 transition-transform shrink-0">
+                <Cpu className="w-6 h-6 md:w-7 md:h-7" />
+              </div>
+              <h5 className="text-lg md:text-xl font-bold text-slate-800 tracking-tight leading-tight">
+                Hardware & APIs
+              </h5>
             </div>
-            <h5 className="text-xl font-bold text-slate-800 mb-3 tracking-tight">
-              Hardware & APIs
-            </h5>
             <p className="text-purple-950/70 text-sm font-medium leading-relaxed">
               Integración de interfaces web con hardware real mediante{' '}
               <strong className="text-purple-800">
-                Microcontroladores (ESP8266) y C++
+                Microcontroladores (Familia ESP de Espressif) y C++
               </strong>
-              . Creación y consumo de APIs REST.
+              . <br /> Creación y consumo de APIs REST.
             </p>
           </div>
         </div>
 
         {/* Bloque 5: Seguridad (Span 5) */}
         <div className="md:col-span-6 lg:col-span-5 p-8 rounded-[2.5rem] bg-gradient-to-br from-rose-50/80 to-pink-100/50 backdrop-blur-xl border border-rose-200/50 shadow-lg hover:shadow-rose-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
-          <ShieldCheck className="absolute -right-8 -top-8 w-48 h-48 text-rose-500/10 group-hover:text-rose-500/20 transition-colors duration-500 group-hover:rotate-6" />
+          <ShieldCheck className="absolute -right-8 -bottom-8 w-42 h-42 text-rose-500/10 group-hover:text-rose-500/20 transition-colors duration-500 group-hover:rotate-6" />
           <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center mb-6 shadow-sm border border-rose-200 group-hover:-rotate-12 transition-transform">
-              <ShieldCheck className="w-7 h-7" />
+            <div className="w-12 h-12 md:w-18 md:h-18 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center shadow-sm border border-rose-200 group-hover:-rotate-12 transition-transform shrink-0">
+              <ShieldCheck className="w-6 h-6 md:w-10 md:h-10" />
             </div>
-            <h5 className="text-xl font-bold text-slate-800 mb-3 tracking-tight">
+            <h5 className="text-lg mt-5 md:text-xl font-bold text-slate-800 tracking-tight leading-tight">
               Seguridad & Finanzas
             </h5>
             <p className="text-rose-950/70 text-sm font-medium leading-relaxed">
@@ -140,9 +146,11 @@ export default function Experience() {
             <p className="text-slate-400 text-sm md:text-base leading-relaxed font-medium">
               Actualmente mi enfoque principal{' '}
               <strong className="text-slate-200">no incluye</strong> el
-              desarrollo móvil nativo puro (Swift/Kotlin), DevOps corporativo ni
-              entrenamiento de IA desde cero. Mi fortaleza absoluta está en la
-              web moderna y Edge Computing.
+              desarrollo móvil nativo puro (Swift/Kotlin), la creación de
+              motores gráficos 3D (C++/Rust) ni el entrenamiento de modelos
+              fundacionales de IA desde cero. Mi fortaleza absoluta está en el
+              desarrollo Full-Stack, la infraestructura moderna y Edge
+              Computing.
               <br />
               <br />
               Sin embargo, mi mayor habilidad es la{' '}

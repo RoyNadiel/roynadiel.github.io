@@ -175,7 +175,7 @@ export default function AboutMe() {
       </h2>
 
       <article className="mx-auto max-w-6xl w-full">
-        <div className="bg-white/40 backdrop-blur-sm border border-indigo-100 p-8 rounded mb-12 shadow-lg">
+        <div className="bg-white/40 backdrop-blur-sm border border-indigo-100 p-8 rounded-[2.5rem] mb-12 shadow-md">
           <p className="text-slate-700 text-lg md:text-2xl font-league-spartan mb-0 leading-relaxed">
             Nací en el 99. Conocí la programación gracias a la universidad.
             Estando en ella he hecho varios proyectos, algunos en C, y la
@@ -192,7 +192,7 @@ export default function AboutMe() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Tarjeta Escritura */}
-            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded transition-all duration-500 hover:border-red-400 hover:shadow-lg overflow-hidden">
+            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded-[2.5rem] transition-all duration-500 hover:border-red-400 hover:shadow-lg overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-red-500/20 transition-all duration-500" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
@@ -211,7 +211,7 @@ export default function AboutMe() {
             </div>
 
             {/* Tarjeta Música */}
-            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded transition-all duration-500 hover:border-blue-400 hover:shadow-lg overflow-hidden">
+            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded-[2.5rem] transition-all duration-500 hover:border-blue-400 hover:shadow-lg overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-blue-500/20 transition-all duration-500" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
@@ -230,7 +230,7 @@ export default function AboutMe() {
             </div>
 
             {/* Tarjeta Ejercicio */}
-            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded transition-all duration-500 hover:border-amber-400 hover:shadow-lg overflow-hidden">
+            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded-[2.5rem] transition-all duration-500 hover:border-amber-400 hover:shadow-lg overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-amber-500/20 transition-all duration-500" />
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
