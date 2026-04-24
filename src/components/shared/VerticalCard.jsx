@@ -1,4 +1,4 @@
-import { ExternalLink, Star, Code2, Zap, Users, Clock } from 'lucide-react';
+import { ExternalLink, Star, Code2, Users, Clock } from 'lucide-react';
 import { GitHubSVG } from './SVG';
 import { useState } from 'react';
 
@@ -58,21 +58,15 @@ function ProjectCard({
               loop
               muted
               playsInline
-              className="w-full h-full object-fill group-hover/video:scale-110 transition-transform duration-700"
+              className="w-full h-full object-fill transition-transform duration-700"
             />
           ) : (
             <img
               src={src}
               alt={name}
-              className="w-full h-full object-fill group-hover/video:scale-110 transition-transform duration-700"
+              className="w-full h-full object-fill transition-transform duration-700"
             />
           )}
-
-          <div className="absolute inset-0 opacity-0 group-hover/video:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-            <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover/video:scale-110 transition-transform duration-500">
-              <Zap className="w-8 h-8 text-white fill-white" />
-            </div>
-          </div>
 
           <div className="absolute top-4 left-4 flex gap-2">
             <span
@@ -107,7 +101,7 @@ function ProjectCard({
                         href={githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="ml-4 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-110 flex-shrink-0"
+                        className="ml-4 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:scale-105 transition-transform flex-shrink-0"
                         aria-label="Ver proyecto"
                       >
                         <GitHubSVG className="w-5 h-5" fill="#fff" />
@@ -119,7 +113,7 @@ function ProjectCard({
                         href={projectUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="ml-2 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-110 flex-shrink-0"
+                        className="ml-2 p-3 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white hover:scale-105 transition-transform flex-shrink-0"
                         aria-label="Ver proyecto"
                       >
                         <ExternalLink className="w-5 h-5" />

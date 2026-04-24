@@ -7,22 +7,20 @@ import Experience from './components/layout/Experience';
 import AboutMe from './components/layout/AboutMe';
 import ParticlesBackground from './components/layout/ParticlesBackground';
 
-
 function App() {
-
   return (
     <>
-     <ParticlesBackground />
-     <Layout>
-      <Header/>
-      <SocialBar/>
-      <Hero/>
-      <Projects/>
-      <Experience/>
-      <AboutMe/>
-     </Layout>
+      <ParticlesBackground />
+      <Layout>
+        <Header />
+        <SocialBar />
+        <Hero />
+        <Projects />
+        <Experience />
+        <AboutMe />
+      </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

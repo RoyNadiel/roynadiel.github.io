@@ -93,7 +93,7 @@ export default function Projects() {
       status: 'Completado',
       duration: '1 Mes',
       complexity: 'medium',
-      targetAudience: 'Todos',
+      targetAudience: 'Programadores CV',
     },
     // {
     //   id: 6,

@@ -39,9 +39,9 @@ export default function Experience() {
             y aseguro que cada pieza funcione de manera segura en producción. A
             través de proyectos como{' '}
             <strong className="text-slate-800">VeteranOps</strong> y{' '}
-            <strong className="text-slate-800">Tasa Actual</strong>, he resuelto
-            problemas complejos manejando usuarios, seguridad y escalabilidad
-            real.
+            <strong className="text-slate-800">Tasa Actual</strong>, he
+            implementado soluciones a problemas complejos manejando usuarios,
+            seguridad y escalabilidad real.
           </p>
         </div>
 
@@ -59,11 +59,17 @@ export default function Experience() {
             </div>
             <p className="text-emerald-950/70 text-sm md:text-base font-medium leading-relaxed">
               Diseño de BD escalables en{' '}
-              <strong className="text-emerald-800">
-                PostgreSQL (Supabase)
+              <strong className="text-emerald-800 ">
+                SQL (PostgreSQL, MySQL, SQLite) | ORMs (Prisma, Drizzle).
               </strong>
-              . Operaciones complejas, consultas eficientes e integridad
-              estructural garantizada.
+              <br />
+              <div className="mt-2">
+                Actualmente estudiando en profundidad:
+                <br />
+                <strong className="text-emerald-950">
+                  DQL, DML, DDL y DCL.
+                </strong>
+              </div>
             </p>
           </div>
         </div>
@@ -105,11 +111,11 @@ export default function Experience() {
               </h5>
             </div>
             <p className="text-purple-950/70 text-sm font-medium leading-relaxed">
-              Integración de interfaces web con hardware real mediante{' '}
+              Integración de interfaces web en local (offline) con hardware real
+              mediante{' '}
               <strong className="text-purple-800">
-                Microcontroladores (Familia ESP de Espressif) y C++
+                Microcontroladores (Familia ESP de Espressif) y C++.
               </strong>
-              . <br /> Creación y consumo de APIs REST.
             </p>
           </div>
         </div>
@@ -124,9 +130,9 @@ export default function Experience() {
             <h5 className="text-lg mt-5 md:text-xl font-bold text-slate-800 tracking-tight leading-tight">
               Seguridad & Finanzas
             </h5>
-            <p className="text-rose-950/70 text-sm font-medium leading-relaxed">
-              Gestión de Autenticación (Google OAuth), roles (RBAC) y políticas
-              de seguridad a nivel de fila (
+            <p className="text-rose-950/70 mt-2 text-sm font-medium leading-relaxed">
+              Gestión de Autenticación (Google OAuth), roles (Role Based Access
+              Control) y políticas de seguridad a nivel de fila (
               <strong className="text-rose-800">RLS</strong>). Experiencia
               manejando carteras y transacciones de usuarios en plataformas como
               VeteranOps.
