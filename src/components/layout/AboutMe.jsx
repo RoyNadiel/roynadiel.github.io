@@ -13,6 +13,7 @@ import {
   Hono,
   Vite,
   Cloudflare,
+  Astro,
 } from '../shared/SVG.jsx';
 import {
   PenTool,
@@ -112,20 +113,12 @@ export default function AboutMe() {
       glow: 'rgba(245,158,11,0.6)',
     },
     {
-      name: 'Vite',
-      icon: <Vite />,
-      color: 'text-pink-500',
-      border: 'border-pink-500',
-      bg: 'bg-pink-500/20',
-      glow: 'rgba(236,72,153,0.6)',
-    },
-    {
-      name: 'Cloudflare',
-      icon: <Cloudflare />,
-      color: 'text-amber-600',
-      border: 'border-amber-600',
-      bg: 'bg-amber-600/20',
-      glow: 'rgba(217,119,6,0.6)',
+      name: 'Astro',
+      icon: <Astro />,
+      color: 'text-orange-600',
+      border: 'border-orange-600',
+      bg: 'bg-orange-600/20',
+      glow: 'rgba(234,88,12,0.6)',
     },
     {
       name: 'React',
@@ -134,6 +127,14 @@ export default function AboutMe() {
       border: 'border-blue-500',
       bg: 'bg-blue-500/20',
       glow: 'rgba(59,130,246,0.6)',
+    },
+    {
+      name: 'Vite',
+      icon: <Vite />,
+      color: 'text-pink-500',
+      border: 'border-pink-500',
+      bg: 'bg-pink-500/20',
+      glow: 'rgba(236,72,153,0.6)',
     },
     {
       name: 'NextJS',
@@ -159,6 +160,14 @@ export default function AboutMe() {
       bg: 'bg-orange-500/20',
       glow: 'rgba(249,115,22,0.6)',
     },
+    {
+      name: 'Cloudflare',
+      icon: <Cloudflare />,
+      color: 'text-amber-600',
+      border: 'border-amber-600',
+      bg: 'bg-amber-600/20',
+      glow: 'rgba(217,119,6,0.6)',
+    },
   ];
 
   return (
@@ -178,8 +187,8 @@ export default function AboutMe() {
         <div className="bg-white/40 backdrop-blur-sm border border-indigo-100 p-8 rounded-[2.5rem] mb-12 shadow-md">
           <p className="text-slate-700 text-lg md:text-2xl font-league-spartan mb-0 leading-relaxed">
             Nací en el 99. Conocí la programación gracias a la universidad.
-            Estando en ella he hecho varios proyectos, algunos en C, y la
-            mayoría en C#. <br />
+            Estando en ella realicé varios proyectos, algunos en C, y la mayoría
+            en C#. <br />
             Sin embargo, conocí el mundo de la programación web gracias a unos
             amigos. Apartir de ahí, en mis estudios autodidactas le dedico la
             mayoria de mi tiempo libre.
@@ -272,7 +281,7 @@ export default function AboutMe() {
         </div>
       </article>
 
-      <div className="w-full max-w-6xl pb-10">
+      <div className="w-full max-w-7xl pb-10">
         <h3 className="text-center text-xl md:text-2xl font-montserrat-alt mb-10 opacity-80">
           Tecnologías que utilizo
         </h3>
