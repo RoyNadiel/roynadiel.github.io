@@ -31,17 +31,23 @@ export default function Projects() {
     },
     {
       id: 2,
-      name: 'WrittingJS',
-      src: './projects/Writtingjs.webp',
+      name: 'Syntax',
+      src: './projects/Syntax.webp',
       description:
-        'Entorno de desarrollo interactivo para JavaScript inspirado en RunJS. Incluye editor de código con Monaco Editor, ejecución en tiempo real, y validaciones estrictas que fomentan las mejores prácticas de programación. Ideal para aprender, experimentar y prototipar código JavaScript de forma rápida y segura.',
-      skillsUsed: ['Vanilla', 'JavaScript', 'HTML', 'CSS', 'Monaco Editor'],
-      mainSkill: 'JS',
-      projectUrl: 'https://writtingjs.pages.dev/',
+        'Entorno de desarrollo interactivo para JavaScript & TypeScript inspirado en RunJS. Incluye editor de código con Monaco Editor, ejecución en tiempo real, y validaciones estrictas que fomentan las mejores prácticas de programación. Ideal para aprender, experimentar y prototipar código JavaScript de forma rápida y segura.',
+      skillsUsed: [
+        'TypeScript',
+        'React',
+        'AcornEST',
+        'Sucrase',
+        'Monaco Editor',
+      ],
+      mainSkill: 'TS',
+      projectUrl: 'https://syntax.roynadiel.workers.dev/',
       status: 'Escalable',
       duration: '3 Meses',
       complexity: 'medium',
-      targetAudience: 'Estudiantes de JS',
+      targetAudience: 'Estudiantes de JS/TS',
     },
     {
       id: 3,
@@ -121,7 +127,7 @@ export default function Projects() {
     <section
       role="Projects"
       id="Proyectos"
-      className="w-full relative min-h-screen grid grid-cols-1 grid-rows-[auto_1fr] place-items-center gap-15 px-4 md:px-16 
+      className="w-full relative min-h-screen grid grid-cols-1 grid-rows-[auto_1fr] place-items-center gap-15 px-4 md:px-16
                 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-5"
     >
       <h4

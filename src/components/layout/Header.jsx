@@ -42,6 +42,14 @@ export default function Header() {
           PROYECTOS
         </a>
         <a
+          aria-label="Experiencia"
+          data-interactive="true"
+          className="navlink"
+          href="#Experiencia"
+        >
+          EXPERIENCIA
+        </a>
+        <a
           aria-label="Sobre Mi"
           data-interactive="true"
           className="navlink"
