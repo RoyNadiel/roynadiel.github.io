@@ -10,7 +10,7 @@ export default function Projects() {
       name: 'Tasa Actual',
       src: './projects/TasaActual.mp4',
       description:
-        'Aplicación web de conversión de divisas en tiempo real para el mercado venezolano. Consulta tasas de cambio actualizadas del par Bolívar/Dólar mediante integración con nuestra propia API, ofreciendo cálculos precisos y una interfaz intuitiva para usuarios que necesitan información cambiaria confiable.',
+        'Aplicación web de conversión de divisas en tiempo real para el mercado Venezolano. Consulta tasas de cambio actualizadas del par Bolívar/Dólar mediante integración con nuestra propia API, ofreciendo cálculos precisos y una interfaz intuitiva para usuarios que necesitan información cambiaria confiable.',
       skillsUsed: [
         'React',
         'TypeScript',
@@ -34,7 +34,7 @@ export default function Projects() {
       name: 'Syntax',
       src: './projects/Syntax.webp',
       description:
-        'Entorno de desarrollo interactivo para JavaScript & TypeScript inspirado en RunJS. Incluye editor de código con Monaco Editor, ejecución en tiempo real, y validaciones estrictas que fomentan las mejores prácticas de programación. Ideal para aprender, experimentar y prototipar código JavaScript de forma rápida y segura.',
+        'Playground de JavaScript & TypeScript inspirado en RunJS. Incluye editor de código con Monaco Editor, ejecución en tiempo real, y validaciones que fomentan las mejores prácticas de programación. Ideal para aprender, experimentar y prototipar código JavaScript de forma rápida y segura.',
       skillsUsed: [
         'TypeScript',
         'React',
