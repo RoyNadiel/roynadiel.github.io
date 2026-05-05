@@ -12,7 +12,7 @@ Mi flujo de trabajo se centra en herramientas de alto rendimiento y escalabilida
 
 ### 🛠️ Proyectos Destacados
 - **[Tasa Actual](https://tasaactual.com/):** Aplicación de conversión de divisas en tiempo real para el mercado venezolano. Incluye API propia y despliegue en Play Store. [cite: 2]
-- **VeteranOps:** Plataforma de gestión de torneos con manejo de seguridad RLS, autenticación y transacciones financieras. [cite: 3]
+- **[VeteranOps](https://veteran-ops.roynadiel.workers.dev)** Plataforma de gestión de torneos con manejo de seguridad RLS, autenticación y transacciones financieras. [cite: 3]
 - **[Syntax](https://syntax.roynadiel.workers.dev/):** Playground interactivo para JS/TS inspirado en RunJS, utilizando Monaco Editor para ejecución en tiempo real. [cite: 2]
 - **[Deshi](https://github.com/RoyNadiel/Deshi):** Interfaz web para el control de una deshidratadora eléctrica basada en Wemos D1 Mini, con control de temperatura y PWM. [cite: 2]
 - **[Quote Creator](https://quotecreator.roynadiel.workers.dev/):** Plataforma para la personalización y generación de imágenes de citas inspiradoras. [cite: 2]
@@ -30,3 +30,4 @@ Mi flujo de trabajo se centra en herramientas de alto rendimiento y escalabilida
 ### 📫 Conecta conmigo
 - **Portfolio:** [roynadiel.github.io](https://roynadiel.github.io)
 - **GitHub:** [@RoyNadiel](https://github.com/RoyNadiel)
+- **LinkedIN** [@RoyNadiel - LinkedIN](https://www.linkedin.com/in/roy-nadiel/)
