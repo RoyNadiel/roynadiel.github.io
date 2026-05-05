@@ -1,5 +1,5 @@
 # Roy Nadiel Almada Hernandez
-## Full-Stack Developer | Informatics Student
+## Full-Stack Developer
 
 Desarrollador de software con enfoque en la creación de productos reales, de principio a fin. Especializado en arquitecturas modernas, infraestructura Edge y la integración de hardware con interfaces web.
 
