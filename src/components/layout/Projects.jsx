@@ -38,6 +38,7 @@ export default function Projects() {
       skillsUsed: [
         'TypeScript',
         'React',
+        'Electron',
         'AcornEST',
         'Sucrase',
         'Monaco Editor',
