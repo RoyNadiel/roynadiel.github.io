@@ -1,6 +1,7 @@
 import { ExternalLink, Star, Code2, Users, Clock } from 'lucide-react';
 import { GitHubSVG } from './SVG';
 import { useState } from 'react';
+import { Download } from 'lucide-react';
 
 function ProjectCard({
   name,
@@ -11,6 +12,7 @@ function ProjectCard({
   projectUrl,
   githubUrl,
   playStoreUrl,
+  releaseUrl = null,
   status = 'completed',
   duration = '3 months',
   complexity = 'high',
@@ -117,6 +119,17 @@ function ProjectCard({
                         aria-label="Ver proyecto"
                       >
                         <ExternalLink className="w-5 h-5" />
+                      </a>
+                    )}
+                    {releaseUrl && (
+                      <a
+                        href={releaseUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 p-3 rounded-xl bg-gradient-to-br from-blue-400 to-blue-600 text-white hover:scale-105 transition-transform flex-shrink-0"
+                        aria-label="Ver release"
+                      >
+                        <Download className="w-5 h-5" />
                       </a>
                     )}
                   </div>
