@@ -1,33 +1,33 @@
-## <div align="center">Hi, i'm a FullStack Web Developer 👋.</div>
+# Roy Nadiel Almada Hernandez
+## Full-Stack Developer
 
-<div align="center"></div>
+Desarrollador de software con enfoque en la creación de productos reales, de principio a fin. Especializado en arquitecturas modernas, infraestructura Edge y la integración de hardware con interfaces web.
 
-# <div align="center">and of course, I Love JavaScript ❤️.</div>
+### 🚀 Stack Tecnológico
+Mi flujo de trabajo se centra en herramientas de alto rendimiento y escalabilidad:
+- **Frontend:** Astro, React, Tailwind CSS V4, TypeScript.
+- **Backend & Edge:** Hono, Cloudflare Workers, Node.js.
+- **Base de Datos:** Supabase (PostgreSQL), Drizzle ORM, Prisma, SQL (DQL, DML, DDL, DCL).
+- **Hardware:** C++, Arduino IDE, Microcontroladores ESP32 y Wemos D1.
 
-<div align="center">I would learn everything i could learn if i were immortal. And i'm not just talking about Programming things;</div>
-<div align="center"><i>I like to learn a little bit of everything.</i></div>
+### 🛠️ Proyectos Destacados
+- **[Tasa Actual](https://tasaactual.com/):** Aplicación de conversión de divisas en tiempo real para el mercado venezolano. Incluye API propia y despliegue en Play Store. [cite: 2]
+- **[VeteranOps](https://veteran-ops.roynadiel.workers.dev)** Plataforma de gestión de torneos con manejo de seguridad RLS, autenticación y transacciones financieras. [cite: 3]
+- **[Syntax](https://syntax.roynadiel.workers.dev/):** Playground interactivo para JS/TS inspirado en RunJS, utilizando Monaco Editor para ejecución en tiempo real. [cite: 2]
+- **[Deshi](https://github.com/RoyNadiel/Deshi):** Interfaz web para el control de una deshidratadora eléctrica basada en Wemos D1 Mini, con control de temperatura y PWM. [cite: 2]
+- **[Quote Creator](https://quotecreator.roynadiel.workers.dev/):** Plataforma para la personalización y generación de imágenes de citas inspiradoras. [cite: 2]
 
-### <div align="center"> 💻 My Tech Stack</div>
+### 💡 Especialidades
+- **Arquitectura de Software:** Diseño de sistemas escalables y seguros en producción. [cite: 3]
+- **Seguridad & Finanzas:** Implementación de RBAC, Google OAuth y políticas RLS. [cite: 3]
+- **Hardware Integration:** Conexión de interfaces web con componentes físicos mediante microcontroladores. [cite: 3]
 
-<div align="center"> 
-  
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
-  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-  ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)  
-  ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-  ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-  ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c#&logoColor=white)
-  
-  </div>
+### ✍️ Intereses y Pasatiempos
+- **Escritura:** Expresión de ideas en versos y prosa. [cite: 1]
+- **Música:** Pasión desde la infancia. [cite: 1]
+- **Calistenia:** Entrenamiento físico enfocado en la salud y el equilibrio. [cite: 1]
 
-### <div align="center">✨ How to reach me! ✨</div>
-
-<div align="center">
-
-[![Mi Portfolio](https://img.shields.io/badge/Portfolio%20Web-6E4ABF?style=for-the-badge&logo=About.me&logoColor=white)](https://roynadiel.github.io/)
-
-</div>
+### 📫 Conecta conmigo
+- **Portfolio:** [roynadiel.github.io](https://roynadiel.github.io)
+- **GitHub:** [@RoyNadiel](https://github.com/RoyNadiel)
+- **LinkedIN** [@RoyNadiel - LinkedIN](https://www.linkedin.com/in/roy-nadiel/)
