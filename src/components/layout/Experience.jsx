@@ -25,9 +25,9 @@ export default function Experience() {
         </h4>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-6xl w-full">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-2 max-w-6xl w-full">
         {/* Bloque 1: Intro / Filosofía (Span 7) */}
-        <div className="md:col-span-12 lg:col-span-7 p-8 md:p-10 rounded-[2.5rem] bg-white/60 backdrop-blur-xl border border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl transition-all duration-500 flex flex-col justify-center relative overflow-hidden group">
+        <div className="md:col-span-12 lg:col-span-7 p-8 md:p-10 rounded-[1rem] bg-white/60 backdrop-blur-xl border border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl transition-all duration-500 flex flex-col justify-center relative overflow-hidden group">
           <div className="absolute -right-10 -top-10 w-40 h-40 bg-blue-100/50 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-200/70 transition-colors duration-500" />
           <Rocket className="absolute -right-4 -bottom-4 w-32 h-32 text-slate-200/70" />
 
@@ -46,7 +46,7 @@ export default function Experience() {
         </div>
 
         {/* Bloque 2: Bases de Datos (Span 5) */}
-        <div className="md:col-span-6 lg:col-span-5 p-8 rounded-[2.5rem] bg-gradient-to-br from-emerald-50/80 to-teal-100/50 backdrop-blur-xl border border-emerald-200/50 shadow-lg hover:shadow-emerald-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
+        <div className="md:col-span-6 lg:col-span-5 p-8 rounded-[1rem] bg-gradient-to-br from-emerald-50/80 to-teal-100/50 backdrop-blur-xl border border-emerald-200/50 shadow-lg hover:shadow-emerald-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
           <Database className="absolute -right-8 -bottom-8 w-48 h-48 text-emerald-500/10" />
           <div className="relative z-10">
             <div className="flex items-center gap-4 mb-4">
@@ -75,7 +75,7 @@ export default function Experience() {
         </div>
 
         {/* Bloque 3: Full-Stack (Span 8) */}
-        <div className="md:col-span-12 lg:col-span-8 p-8 md:p-10 rounded-[2.5rem] bg-gradient-to-br from-blue-50/80 to-indigo-100/50 backdrop-blur-xl border border-blue-200/50 shadow-lg hover:shadow-blue-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
+        <div className="md:col-span-12 lg:col-span-8 p-8 md:p-10 rounded-[1rem] bg-gradient-to-br from-blue-50/80 to-indigo-100/50 backdrop-blur-xl border border-blue-200/50 shadow-lg hover:shadow-blue-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
           <Server className="absolute right-0 -bottom-12 md:top-10 w-36 h-36 md:w-64 md:h-64 text-blue-500/10" />
           <div className="relative z-10 md:w-3/4">
             <div className="flex items-center gap-4 mb-4">
@@ -99,7 +99,7 @@ export default function Experience() {
         </div>
 
         {/* Bloque 4: Hardware (Span 4) */}
-        <div className="md:col-span-6 lg:col-span-4 p-8 rounded-[2.5rem] bg-gradient-to-br from-purple-50/80 to-fuchsia-100/50 backdrop-blur-xl border border-purple-200/50 shadow-lg hover:shadow-purple-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
+        <div className="md:col-span-6 lg:col-span-4 p-8 rounded-[1rem] bg-gradient-to-br from-purple-50/80 to-fuchsia-100/50 backdrop-blur-xl border border-purple-200/50 shadow-lg hover:shadow-purple-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
           <Cpu className="absolute -right-4 -bottom-4 w-26 h-26 text-purple-500/10" />
           <div className="relative z-10">
             <div className="flex items-center gap-4 mb-4">
@@ -121,7 +121,7 @@ export default function Experience() {
         </div>
 
         {/* Bloque 5: Seguridad (Span 5) */}
-        <div className="md:col-span-6 lg:col-span-5 p-8 rounded-[2.5rem] bg-gradient-to-br from-rose-50/80 to-pink-100/50 backdrop-blur-xl border border-rose-200/50 shadow-lg hover:shadow-rose-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
+        <div className="md:col-span-6 lg:col-span-5 p-8 rounded-[1rem] bg-gradient-to-br from-rose-50/80 to-pink-100/50 backdrop-blur-xl border border-rose-200/50 shadow-lg hover:shadow-rose-200/50 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
           <ShieldCheck className="absolute -right-8 -bottom-8 w-40 h-40 text-rose-500/10" />
           <div className="relative z-10">
             <div className="w-12 h-12 md:w-20 md:h-20 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center shadow-sm border border-rose-200 transition-transform shrink-0">
@@ -141,7 +141,7 @@ export default function Experience() {
         </div>
 
         {/* Bloque 6: Transparencia (Span 7) */}
-        <div className="md:col-span-12 lg:col-span-7 p-8 rounded-[2.5rem] bg-slate-900 border border-slate-700 shadow-2xl hover:shadow-indigo-500/20 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group flex flex-col justify-center">
+        <div className="md:col-span-12 lg:col-span-7 p-8 rounded-[1rem] bg-slate-900 border border-slate-700 shadow-2xl hover:shadow-indigo-500/20 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group flex flex-col justify-center">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-900/40 via-slate-900 to-slate-900" />
 
           <div className="relative z-10">

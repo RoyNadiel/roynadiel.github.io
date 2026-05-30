@@ -108,7 +108,7 @@ export default function Hero() {
     <section
       role="Presenación"
       id="Hero"
-      className="relative w-full h-screen py-10"
+      className="relative w-full h-screen py-14"
     >
       <AvailabilityBadge />
       <FastStats />
