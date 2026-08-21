@@ -131,6 +131,26 @@ body {
   aspect-ratio: 1/1;
 }
 
+/* Infinite Marquee Animation (ACME Store style) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
 /* Hide scrollbars cleanly */
 html, body {
   -ms-overflow-style: none;

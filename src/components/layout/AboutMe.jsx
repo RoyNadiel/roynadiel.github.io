@@ -163,32 +163,37 @@ export default function AboutMe() {
           </div>
         </div>
 
-        {/* Tech Stack Catalog */}
-        <div className="pt-8 border-t border-slate-200/80 pb-16">
-          <h3 className="text-center text-sm font-mono uppercase tracking-widest text-slate-500 mb-10">
+        {/* Tech Stack Continuous Carousel */}
+        <div className="pt-8 border-t border-slate-200/80 pb-20 overflow-hidden">
+          <h3 className="text-center text-sm font-mono uppercase tracking-widest text-slate-500 mb-12">
             Tecnologías & Herramientas
           </h3>
-          <ul className="flex flex-wrap items-center justify-center gap-6 list-none max-w-4xl mx-auto">
-            {technologies.map((tech, index) => (
-              <li
-                key={index}
-                className="w-12 h-12 lg:w-16 lg:h-16 p-2 lg:p-3 skillsImg relative group rounded-2xl bg-white/90 border border-slate-200/80 shadow-xs flex items-center justify-center transition-all duration-300 reflect-image hover:scale-110 hover:-translate-y-1 hover:border-pink-300 hover:shadow-lg cursor-pointer"
-              >
-                <div className="w-full h-full flex items-center justify-center relative z-10 shrink-0">
-                  {tech.icon}
-                </div>
 
-                {/* Tooltip */}
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-50">
-                  <div className="px-3 py-1 bg-slate-900/90 backdrop-blur-md rounded-lg shadow-md border border-slate-700">
-                    <span className="text-[11px] font-mono font-semibold text-white uppercase whitespace-nowrap">
-                      {tech.name}
-                    </span>
+          {/* Marquee Container with edge fade masks */}
+          <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+            <div className="animate-marquee flex items-center gap-8 py-4">
+              {/* Duplicar la lista para un loop infinito sin cortes */}
+              {[...technologies, ...technologies].map((tech, index) => (
+                <div
+                  key={index}
+                  className="w-14 h-14 lg:w-16 lg:h-16 p-2.5 lg:p-3 skillsImg relative group rounded-2xl bg-white/90 border border-slate-200/80 shadow-xs flex items-center justify-center transition-all duration-300 reflect-image hover:scale-110 hover:-translate-y-1 hover:border-pink-300 hover:shadow-lg cursor-pointer shrink-0"
+                >
+                  <div className="w-full h-full flex items-center justify-center relative z-10 shrink-0">
+                    {tech.icon}
+                  </div>
+
+                  {/* Tooltip */}
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-50">
+                    <div className="px-3 py-1 bg-slate-900/90 backdrop-blur-md rounded-lg shadow-md border border-slate-700">
+                      <span className="text-[11px] font-mono font-semibold text-white uppercase whitespace-nowrap">
+                        {tech.name}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </li>
-            ))}
-          </ul>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
