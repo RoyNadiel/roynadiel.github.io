@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <section
       id="Hero"
-      className="relative w-full min-h-[90vh] pt-32 pb-20 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center"
+      className="relative w-full min-h-[90vh] pt-24 sm:pt-32 pb-20 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center"
     >
       {/* Background Decorative Glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -85,8 +85,9 @@ export default function Hero() {
           Especializado en interfaces modernas, Edge Computing y arquitecturas web de alto rendimiento.
         </p>
 
-        <blockquote className="inline-block pt-2 text-xs sm:text-sm font-mono text-slate-500">
-          «Platón es mi amigo, pero es más amiga la verdad» — <span className="font-semibold text-slate-700">Aristóteles</span>
+        <blockquote className="pt-2 text-xs sm:text-sm font-mono text-slate-500">
+          <p>«Platón es mi amigo, pero es más amiga la verdad»</p>
+          <span className="block mt-1 font-semibold text-slate-700">~ Aristóteles</span>
         </blockquote>
       </div>
 

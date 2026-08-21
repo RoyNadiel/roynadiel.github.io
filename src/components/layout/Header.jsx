@@ -7,11 +7,11 @@ export default function Header() {
 
   return (
     <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
-      <div className="w-full max-w-5xl h-14 px-4 md:px-6 flex items-center justify-between rounded-full bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-sm shadow-slate-900/5">
-        {/* Logo / Brand */}
+      <div className="w-full max-w-5xl h-14 px-2 md:px-6 flex items-center justify-center sm:justify-between rounded-full bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-sm shadow-slate-900/5">
+        {/* Logo / Brand (Hidden on Mobile) */}
         <button
           onClick={handleReloadClick}
-          className="flex items-center gap-2 font-mono font-bold text-sm md:text-base tracking-tight text-slate-900 hover:opacity-80 transition cursor-pointer"
+          className="hidden sm:flex items-center gap-2 font-mono font-bold text-sm md:text-base tracking-tight text-slate-900 hover:opacity-80 transition cursor-pointer"
         >
           <span className="w-2.5 h-2.5 rounded-full bg-pink-500 animate-pulse" />
           <span>ROY NADIEL</span>
@@ -21,34 +21,34 @@ export default function Header() {
         </button>
 
         {/* Navigation Links (Pill Style) */}
-        <nav className="flex items-center gap-1 md:gap-2">
+        <nav className="flex items-center gap-0.5 md:gap-2">
           <a
             href="#Hero"
-            className="px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
+            className="px-1.5 sm:px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
           >
             Inicio
           </a>
           <a
             href="#Proyectos"
-            className="px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
+            className="px-1.5 sm:px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
           >
             Proyectos
           </a>
           <a
             href="#Experiencia"
-            className="px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
+            className="px-1.5 sm:px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
           >
             Experiencia
           </a>
           <a
             href="#Sobre-Mi"
-            className="px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
+            className="px-1.5 sm:px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
           >
             Sobre Mí
           </a>
         </nav>
 
-        {/* Tech Badges / CTAs */}
+        {/* Tech Badges / CTAs (Hidden on Mobile) */}
         <div className="hidden sm:flex items-center gap-3">
           <div className="flex items-center gap-1.5 px-2.5 py-1 bg-slate-50 border border-slate-200 rounded-full text-slate-700 text-xs font-mono">
             <a

@@ -13,7 +13,7 @@ export default function Experience() {
   return (
     <section
       id="Experiencia"
-      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14"
     >
       {/* Section Header */}
       <div className="flex flex-col items-center text-center mb-16 space-y-3">

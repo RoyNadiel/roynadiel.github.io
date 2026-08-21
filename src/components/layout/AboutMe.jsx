@@ -1,3 +1,4 @@
+import { Brain } from 'lucide-react';
 import {
   HTML,
   CSS,
@@ -50,6 +51,14 @@ export default function AboutMe() {
       title: 'Resolución de Problemas Lógicos',
       icon: <GraduationCap className="w-4 h-4 text-emerald-600" />,
     },
+    {
+      title: 'IoT / Hardware & Software',
+      icon: <Cpu className="w-4 h-4 text-emerald-600" />,
+    },
+    {
+      title: 'IA / Machine Learning (Explorando)',
+      icon: <Brain className="w-4 h-4 text-emerald-600" />,
+    }
   ];
 
   const technologies = [
@@ -72,7 +81,7 @@ export default function AboutMe() {
   return (
     <section
       id="Sobre-Mi"
-      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14"
     >
       {/* Section Header */}
       <div className="flex flex-col items-center text-center mb-16 space-y-3">
@@ -150,7 +159,7 @@ export default function AboutMe() {
             <Cpu className="w-4 h-4 text-cyan-600" />
             <span>Áreas de Interés</span>
           </h3>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex items-center justify-center flex-wrap gap-3">
             {interests.map((item, idx) => (
               <div
                 key={idx}
@@ -164,13 +173,13 @@ export default function AboutMe() {
         </div>
 
         {/* Tech Stack Continuous Carousel */}
-        <div className="pt-8 border-t border-slate-200/80 pb-20 overflow-hidden">
-          <h3 className="text-center text-sm font-mono uppercase tracking-widest text-slate-500 mb-12">
+        <div className="pt-8 border-t border-slate-200/80 pb-6 overflow-hidden">
+          <h3 className="text-center text-sm font-mono uppercase tracking-widest text-slate-500">
             Tecnologías & Herramientas
           </h3>
 
           {/* Marquee Container with edge fade masks */}
-          <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] pt-12 pb-16">
+          <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] pt-4 pb-16">
             <div className="animate-marquee flex items-center gap-8 py-2">
               {/* Duplicar la lista para un loop infinito sin cortes */}
               {[...technologies, ...technologies].map((tech, index) => (
@@ -199,4 +208,3 @@ export default function AboutMe() {
     </section>
   );
 }
-
