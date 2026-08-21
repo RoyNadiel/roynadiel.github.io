@@ -1,4 +1,3 @@
-import '../shared/Shapes.css';
 import {
   HTML,
   CSS,
@@ -24,315 +23,175 @@ import {
   Rocket,
   Zap,
   GraduationCap,
+  User,
+  Heart,
+  Cpu,
 } from 'lucide-react';
 
 export default function AboutMe() {
   const interests = [
     {
-      title: 'Diseño UI/UX y Animaciones Web',
-      icon: <Palette className="w-6 h-6 text-pink-400" />,
-      color: 'border-pink-500/50 hover:bg-pink-500/10',
+      title: 'Diseño UI/UX y Animaciones',
+      icon: <Palette className="w-4 h-4 text-pink-500" />,
     },
     {
-      title: 'Open Source y Comunidades Tech',
-      icon: <Users className="w-6 h-6 text-blue-400" />,
-      color: 'border-blue-500/50 hover:bg-blue-500/10',
-    },
-    {
-      title: 'Accesibilidad Web',
-      icon: <Rocket className="w-6 h-6 text-purple-400" />,
-      color: 'border-purple-500/50 hover:bg-purple-500/10',
+      title: 'Open Source y Comunidades',
+      icon: <Users className="w-4 h-4 text-cyan-600" />,
     },
     {
       title: 'Performance y Escalabilidad',
-      icon: <Zap className="w-6 h-6 text-yellow-400" />,
-      color: 'border-yellow-500/50 hover:bg-yellow-500/10',
+      icon: <Zap className="w-4 h-4 text-amber-500" />,
+    },
+    {
+      title: 'Edge Computing & APIs Ligeras',
+      icon: <Rocket className="w-4 h-4 text-purple-500" />,
     },
     {
       title: 'Resolución de Problemas Lógicos',
-      icon: <GraduationCap className="w-6 h-6 text-green-400" />,
-      color: 'border-green-500/50 hover:bg-green-500/10',
+      icon: <GraduationCap className="w-4 h-4 text-emerald-600" />,
     },
   ];
 
   const technologies = [
-    {
-      name: 'HTML',
-      icon: <HTML />,
-      color: 'text-orange-500',
-      border: 'border-orange-500',
-      bg: 'bg-amber-500/20',
-      glow: 'rgba(249,115,22,0.6)',
-    },
-    {
-      name: 'CSS',
-      icon: <CSS />,
-      color: 'text-blue-500',
-      border: 'border-blue-500',
-      bg: 'bg-blue-500/20',
-      glow: 'rgba(59,130,246,0.6)',
-    },
-    {
-      name: 'TailwindCSS',
-      icon: <TailwindCSS />,
-      color: 'text-blue-500',
-      border: 'border-blue-500',
-      bg: 'bg-blue-600/20',
-      glow: 'rgba(37,99,235,0.6)',
-    },
-    {
-      name: 'JavaScript',
-      icon: <JS />,
-      color: 'text-yellow-500',
-      border: 'border-yellow-500',
-      bg: 'bg-yellow-500/20',
-      glow: 'rgba(234,179,8,0.6)',
-    },
-    {
-      name: 'TypeScript',
-      icon: <TypeScript />,
-      color: 'text-blue-400',
-      border: 'border-blue-400',
-      bg: 'bg-blue-300/20',
-      glow: 'rgba(96,165,250,0.6)',
-    },
-    {
-      name: 'C#',
-      icon: <CSHARP />,
-      color: 'text-purple-500',
-      border: 'border-purple-500',
-      bg: 'bg-purple-500/20',
-      glow: 'rgba(168,85,247,0.6)',
-    },
-    {
-      name: 'Git',
-      icon: <Git />,
-      color: 'text-amber-500',
-      border: 'border-amber-500',
-      bg: 'bg-amber-500/20',
-      glow: 'rgba(245,158,11,0.6)',
-    },
-    {
-      name: 'Astro',
-      icon: <Astro />,
-      color: 'text-orange-600',
-      border: 'border-orange-600',
-      bg: 'bg-orange-600/20',
-      glow: 'rgba(234,88,12,0.6)',
-    },
-    {
-      name: 'React',
-      icon: <React />,
-      color: 'text-blue-500',
-      border: 'border-blue-500',
-      bg: 'bg-blue-500/20',
-      glow: 'rgba(59,130,246,0.6)',
-    },
-    {
-      name: 'Vite',
-      icon: <Vite />,
-      color: 'text-pink-500',
-      border: 'border-pink-500',
-      bg: 'bg-pink-500/20',
-      glow: 'rgba(236,72,153,0.6)',
-    },
-    {
-      name: 'NextJS',
-      icon: <NextJS />,
-      color: 'text-white',
-      border: 'border-white',
-      bg: 'bg-black/10',
-      glow: 'rgba(255,255,255,0.4)',
-    },
-    {
-      name: 'NodeJS',
-      icon: <NodeJS />,
-      color: 'text-green-500',
-      border: 'border-green-500',
-      bg: 'bg-green-500/20',
-      glow: 'rgba(34,197,94,0.6)',
-    },
-    {
-      name: 'Hono',
-      icon: <Hono />,
-      color: 'text-orange-500',
-      border: 'border-orange-500',
-      bg: 'bg-orange-500/20',
-      glow: 'rgba(249,115,22,0.6)',
-    },
-    {
-      name: 'Cloudflare',
-      icon: <Cloudflare />,
-      color: 'text-amber-600',
-      border: 'border-amber-600',
-      bg: 'bg-amber-600/20',
-      glow: 'rgba(217,119,6,0.6)',
-    },
+    { name: 'HTML5', icon: <HTML /> },
+    { name: 'CSS3', icon: <CSS /> },
+    { name: 'TailwindCSS', icon: <TailwindCSS /> },
+    { name: 'JavaScript', icon: <JS /> },
+    { name: 'TypeScript', icon: <TypeScript /> },
+    { name: 'C#', icon: <CSHARP /> },
+    { name: 'Git', icon: <Git /> },
+    { name: 'Astro', icon: <Astro /> },
+    { name: 'React', icon: <React /> },
+    { name: 'Next.js', icon: <NextJS /> },
+    { name: 'Node.js', icon: <NodeJS /> },
+    { name: 'Hono', icon: <Hono /> },
+    { name: 'Vite', icon: <Vite /> },
+    { name: 'Cloudflare', icon: <Cloudflare /> },
   ];
 
   return (
     <section
-      role="Sobre Mi"
-      id="Sobre Mi"
-      className="w-full min-h-screen flex flex-col items-center justify-center p-6 md:p-10"
+      id="Sobre-Mi"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28"
     >
-      <h2
-        className="text-center text-red-600 text-4xl font-montserrat-alt tracking-widest mt-20 mb-10 
-                md:mt-4 md:text-5xl"
-      >
-        SOBRE MÍ
-      </h2>
+      {/* Section Header */}
+      <div className="flex flex-col items-center text-center mb-16 space-y-3">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono">
+          <User className="w-3.5 h-3.5 text-pink-500" />
+          <span>PERFIL & HABILIDADES</span>
+        </div>
+        <h2 className="text-3xl sm:text-5xl font-sans font-extrabold tracking-tight text-slate-900">
+          Sobre Mí
+        </h2>
+        <p className="text-slate-600 text-sm sm:text-base max-w-lg font-sans">
+          Curiosidad continua, disciplina autodidacta y atención a los detalles.
+        </p>
+      </div>
 
-      <article className="mx-auto max-w-6xl w-full">
-        <div className="bg-white/40 backdrop-blur-sm border border-indigo-100 p-8 rounded-[1rem] mb-12 shadow-md">
-          <p className="text-slate-700 text-lg md:text-2xl font-league-spartan mb-0 leading-relaxed">
-            Nací en el 99. Conocí la programación gracias a la universidad.
-            Estando en ella realicé varios proyectos, algunos en C, y la mayoría
-            en C#. <br />
-            Sin embargo, conocí el mundo de la programación web gracias a unos
-            amigos. Apartir de ahí, en mis estudios autodidactas le dedico la
-            mayoria de mi tiempo libre.
+      <div className="space-y-12">
+        {/* Bio Card */}
+        <div className="p-8 md:p-10 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-xs">
+          <p className="text-slate-700 font-sans text-base sm:text-lg leading-relaxed">
+            Nací en 1999. Me inicié en el mundo de la programación en la universidad realizando proyectos en C y C#. Más adelante descubrí la ingeniería web y el ecosistema moderno de JavaScript/TypeScript, al cual le dedico apasionadamente la mayor parte de mi tiempo libre creando herramientas, optimizando flujos y refinando productos.
           </p>
         </div>
 
-        <div className="mb-12">
-          <h3 className="text-slate-800 text-2xl md:text-3xl font-montserrat-alt mb-8 border-l-4 border-red-600 pl-4">
-            Pasatiempos
+        {/* Hobbies Grid (ACME clean card style) */}
+        <div>
+          <h3 className="text-lg font-bold font-sans text-slate-900 mb-6 flex items-center gap-2">
+            <Heart className="w-4 h-4 text-pink-500" />
+            <span>Pasatiempos & Disciplinas</span>
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Tarjeta Escritura */}
-            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded-[1rem] transition-all duration-500 hover:border-red-400 hover:shadow-lg overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-red-500/20 transition-all duration-500" />
-              <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="p-4 bg-gradient-to-br from-red-500/20 to-red-600/10 rounded-full border border-red-500/20 group-hover:scale-110 transition-transform duration-500">
-                    <PenTool className="text-red-400 w-7 h-7" />
-                  </div>
-                  <h4 className="text-black text-2xl font-bold font-montserrat-alt">
-                    Escritura
-                  </h4>
-                </div>
-                <p className="text-slate-600 font-league-spartan text-lg leading-relaxed">
-                  Me gusta escribir; expresar ideas, sentimientos y pensamientos
-                  en versos y prosa.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Escritura */}
+            <div className="p-6 rounded-xl bg-white/80 border border-slate-200/80 hover:border-slate-300 shadow-xs hover:shadow-md transition duration-300">
+              <div className="w-10 h-10 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center mb-4">
+                <PenTool className="w-5 h-5" />
               </div>
+              <h4 className="text-base font-bold font-sans text-slate-900 mb-2">
+                Escritura
+              </h4>
+              <p className="text-slate-600 font-sans text-sm leading-relaxed">
+                Me gusta escribir para estructurar pensamientos complejos, expresar ideas en verso y sintetizar conceptos técnicos.
+              </p>
             </div>
 
-            {/* Tarjeta Música */}
-            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded-[1rem] transition-all duration-500 hover:border-blue-400 hover:shadow-lg overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-blue-500/20 transition-all duration-500" />
-              <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="p-4 bg-gradient-to-br from-blue-500/20 to-blue-600/10 rounded-full border border-blue-500/20 group-hover:scale-110 transition-transform duration-500">
-                    <Music className="text-blue-400 w-7 h-7" />
-                  </div>
-                  <h4 className="text-black text-2xl font-bold font-montserrat-alt">
-                    Música
-                  </h4>
-                </div>
-                <p className="text-slate-600 font-league-spartan text-lg leading-relaxed">
-                  Amo la música desde muy pequeño, y según Nietzsche, sin ella
-                  la vida sería un error.
-                </p>
+            {/* Música */}
+            <div className="p-6 rounded-xl bg-white/80 border border-slate-200/80 hover:border-slate-300 shadow-xs hover:shadow-md transition duration-300">
+              <div className="w-10 h-10 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center mb-4">
+                <Music className="w-5 h-5" />
               </div>
+              <h4 className="text-base font-bold font-sans text-slate-900 mb-2">
+                Música
+              </h4>
+              <p className="text-slate-600 font-sans text-sm leading-relaxed">
+                Amo la música en todas sus facetas; es el motor creativo de mi día a día y concentración constante.
+              </p>
             </div>
 
-            {/* Tarjeta Ejercicio */}
-            <div className="group relative bg-white/40 backdrop-blur-md border border-indigo-100 p-8 rounded-[1rem] transition-all duration-500 hover:border-amber-400 hover:shadow-lg overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 blur-3xl -mr-16 -mt-16 group-hover:bg-amber-500/20 transition-all duration-500" />
-              <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="p-4 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-full border border-amber-500/20 group-hover:scale-110 transition-transform duration-500">
-                    <Dumbbell className="text-amber-400 w-7 h-7" />
-                  </div>
-                  <h4 className="text-black text-2xl font-bold font-montserrat-alt">
-                    Ejercicio
-                  </h4>
-                </div>
-                <p className="text-slate-600 font-league-spartan text-lg leading-relaxed">
-                  Hago ejercicio, principalmente Calistenia. Me gusta estar en
-                  forma y priorizo la salud.
-                </p>
+            {/* Calistenia */}
+            <div className="p-6 rounded-xl bg-white/80 border border-slate-200/80 hover:border-slate-300 shadow-xs hover:shadow-md transition duration-300">
+              <div className="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+                <Dumbbell className="w-5 h-5" />
               </div>
+              <h4 className="text-base font-bold font-sans text-slate-900 mb-2">
+                Calistenia
+              </h4>
+              <p className="text-slate-600 font-sans text-sm leading-relaxed">
+                Entrenamiento físico consistente. La constancia corporal complementa la resistencia mental al resolver código.
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="mb-16">
-          <h3 className="text-2xl md:text-3xl font-montserrat-alt mb-8 border-l-4 border-red-600 pl-4">
-            Mis Intereses
+        {/* Intereses (Pill Tags) */}
+        <div>
+          <h3 className="text-lg font-bold font-sans text-slate-900 mb-6 flex items-center gap-2">
+            <Cpu className="w-4 h-4 text-cyan-600" />
+            <span>Áreas de Interés</span>
           </h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {interests.map((interest, index) => (
+          <div className="flex flex-wrap gap-3">
+            {interests.map((item, idx) => (
               <div
-                key={index}
-                className={`flex items-center gap-3 px-6 py-4 backdrop-blur-md border-2 rounded transition-all duration-300 cursor-default group hover:scale-105 ${interest.color} shadow-lg`}
+                key={idx}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/90 border border-slate-200/80 hover:border-slate-300 shadow-xs text-xs sm:text-sm font-sans font-medium text-slate-700 transition"
               >
-                <div className="transition-transform duration-300 group-hover:rotate-12">
-                  {interest.icon}
-                </div>
-                <span className="font-league-spartan text-lg md:text-xl font-semibold">
-                  {interest.title}
-                </span>
+                {item.icon}
+                <span>{item.title}</span>
               </div>
             ))}
           </div>
         </div>
-      </article>
 
-      <div className="w-full max-w-7xl pb-10">
-        <h3 className="text-center text-xl md:text-2xl font-montserrat-alt mb-10 opacity-80">
-          Tecnologías que utilizo
-        </h3>
-        <ul className="flex flex-wrap items-center justify-center gap-6 list-none list-inside col-span-full">
-          {technologies.map((tech, index) => (
-            <li
-              key={index}
-              className={`w-10 h-10 lg:w-16 lg:h-16 p-2 lg:p-4 skillsImg relative group rounded-full ${tech.bg} flex items-center justify-center transition-all duration-500 reflect-image`}
-              style={{
-                filter: `drop-shadow(0 0 0px transparent)`,
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.filter = `drop-shadow(0 0 15px ${tech.glow})`;
-                e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.filter = `drop-shadow(0 0 0px transparent)`;
-                e.currentTarget.style.transform = 'scale(1) translateY(0)';
-              }}
-            >
-              <div className="w-full h-full flex items-center justify-center relative z-10 shrink-0">
-                {tech.icon}
-              </div>
+        {/* Tech Stack Catalog */}
+        <div className="pt-8 border-t border-slate-200/80 pb-16">
+          <h3 className="text-center text-sm font-mono uppercase tracking-widest text-slate-500 mb-10">
+            Tecnologías & Herramientas
+          </h3>
+          <ul className="flex flex-wrap items-center justify-center gap-6 list-none max-w-4xl mx-auto">
+            {technologies.map((tech, index) => (
+              <li
+                key={index}
+                className="w-12 h-12 lg:w-16 lg:h-16 p-2 lg:p-3 skillsImg relative group rounded-2xl bg-white/90 border border-slate-200/80 shadow-xs flex items-center justify-center transition-all duration-300 reflect-image hover:scale-110 hover:-translate-y-1 hover:border-pink-300 hover:shadow-lg cursor-pointer"
+              >
+                <div className="w-full h-full flex items-center justify-center relative z-10 shrink-0">
+                  {tech.icon}
+                </div>
 
-              {/* Tooltip Moderno */}
-              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-50">
-                <div className="relative flex flex-col items-center">
-                  <div
-                    className={`px-4 py-1.5 bg-indigo-950/90 backdrop-blur-xl border ${tech.border} rounded shadow-[0_0_20px_rgba(0,0,0,0.5)] translate-y-2 group-hover:translate-y-0 transition-transform duration-300`}
-                  >
-                    <span
-                      className={`text-sm font-black tracking-wide uppercase whitespace-nowrap ${tech.color}`}
-                    >
+                {/* Tooltip */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-50">
+                  <div className="px-3 py-1 bg-slate-900/90 backdrop-blur-md rounded-lg shadow-md border border-slate-700">
+                    <span className="text-[11px] font-mono font-semibold text-white uppercase whitespace-nowrap">
                       {tech.name}
                     </span>
                   </div>
-                  {/* Triángulo/Indicador */}
-                  <div
-                    className={`w-2 h-2 bg-indigo-950 border-r border-b ${tech.border} rotate-45 -mt-1 shadow-[5px_5px_10px_rgba(0,0,0,0.3)]`}
-                  ></div>
                 </div>
-              </div>
-
-              {/* Reflejo/Glow inferior */}
-              <div
-                className={`absolute inset-0 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl ${tech.bg}`}
-              ></div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
 }
+

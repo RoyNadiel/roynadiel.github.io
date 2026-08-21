@@ -1,7 +1,5 @@
-import Card from '../shared/Card';
-import '../shared/Shapes.css';
-import { CodeIcon } from '../shared/SVG.jsx';
 import VerticalCard from '../shared/VerticalCard';
+import { Layers } from 'lucide-react';
 
 export default function Projects() {
   const Projects = [
@@ -10,21 +8,21 @@ export default function Projects() {
       name: 'Tasa Actual',
       src: './projects/TasaActual.mp4',
       description:
-        'Aplicación web de conversión de divisas en tiempo real para el mercado Venezolano. Consulta tasas de cambio actualizadas del par Bolívar/Dólar mediante integración con nuestra propia API, ofreciendo cálculos precisos y una interfaz intuitiva para usuarios que necesitan información cambiaria confiable.',
+        'Aplicación web de conversión de divisas en tiempo real para el mercado Venezolano. Consulta tasas de cambio actualizadas del par Bolívar/Dólar mediante integración con API propia, ofreciendo cálculos precisos e interfaz moderna.',
       skillsUsed: [
         'React',
         'TypeScript',
         'Axios',
         'Cloudflare',
         'Supabase',
-        'Api',
+        'API',
         '¡PlayStore!',
       ],
-      mainSkill: 'TS',
+      mainSkill: 'TypeScript',
       projectUrl: 'https://tasaactual.com/',
       playStoreUrl:
         'https://play.google.com/store/apps/details?id=com.tasaactual.twa&hl=es_419',
-      status: 'Escalable',
+      status: 'Completado',
       duration: 'MVP - 1 Mes',
       complexity: 'medium',
       targetAudience: 'Venezolanos',
@@ -34,7 +32,7 @@ export default function Projects() {
       name: 'Syntax',
       src: './projects/Syntax.webp',
       description:
-        'Playground de JavaScript & TypeScript inspirado en RunJS. Incluye editor de código con Monaco Editor, ejecución en tiempo real, y validaciones que fomentan las mejores prácticas de programación. Ideal para aprender, experimentar y prototipar código JavaScript de forma rápida y segura.',
+        'Playground de JavaScript & TypeScript inspirado en RunJS. Incluye editor de código con Monaco Editor, ejecución en tiempo real, y validaciones de sintaxis seguras.',
       skillsUsed: [
         'TypeScript',
         'React',
@@ -43,21 +41,21 @@ export default function Projects() {
         'Sucrase',
         'Monaco Editor',
       ],
-      mainSkill: 'TS',
+      mainSkill: 'TypeScript',
       githubUrl: 'https://github.com/RoyNadiel/Syntax',
       projectUrl: 'https://syntax.roynadiel.workers.dev/',
       releaseUrl: 'https://github.com/RoyNadiel/Syntax/releases',
       status: 'Escalable',
       duration: '3 Meses',
       complexity: 'medium',
-      targetAudience: 'Estudiantes de JS/TS',
+      targetAudience: 'Devs JS/TS',
     },
     {
       id: 3,
       name: 'Deshi',
       src: './projects/Deshi.mp4',
       description:
-        'Interfaz Web para el control de una Deshidratadora Electrica construida al rededor del Microcontrolador Wemos D1 Mini. Es posible controlar el tiempo de Deshidratacion (15min - 24h), la temperatura objetivo (30°C - 70°C). Accionar ventiladores y controlar su velocidad via PWM a través de un Mosfet según se necesite. Componentes para el desarrollo de la Deshiratadora en Github.',
+        'Interfaz Web para el control de una Deshidratadora Eléctrica construida alrededor del ESP8266 (Wemos D1 Mini). Control de temperatura (30°C - 70°C), timers y velocidad de ventiladores vía PWM.',
       skillsUsed: [
         'ESP8266',
         'Arduino IDE',
@@ -72,78 +70,66 @@ export default function Projects() {
       status: 'Completado',
       duration: '1 Mes',
       complexity: 'medium',
-      targetAudience: 'Mecatrónica',
+      targetAudience: 'Mecatrónica / IoT',
     },
     {
       id: 4,
       name: 'Quote Creator',
       src: './projects/QuoteCreator.png',
       description:
-        'Plataforma web interactiva para la creación y personalización de citas inspiradoras. Permite a los usuarios generar imágenes de citas con estilos personalizables, fuentes variadas y fondos atractivos. Ideal para compartir contenido en redes sociales con un diseño profesional y moderno.',
+        'Plataforma web interactiva para la creación y personalización de citas inspiradoras con fuentes y fondos atractivos listos para exportar y compartir.',
       skillsUsed: ['React', 'TypeScript', 'TailwindCSS', 'HTML2CANVAS'],
-      mainSkill: 'TS',
+      mainSkill: 'TypeScript',
       githubUrl: 'https://github.com/RoyNadiel/QuoteCreator',
       projectUrl: 'https://quotecreator.roynadiel.workers.dev/',
       status: 'Escalable',
-      duration: 'MVP - 10 Dias',
+      duration: '10 Días',
       complexity: 'medium',
-      targetAudience: 'Escritores',
+      targetAudience: 'Creadores',
     },
     {
       id: 5,
-      name: 'CV',
+      name: 'CV Interactivo',
       src: './projects/CV.mp4',
       description:
-        'Currículum vitae interactivo renderizado como PDF en el navegador. Desarrollado con React y TypeScript, desplegado en Cloudflare Workers para máxima velocidad y disponibilidad global. Utiliza Hono como framework backend ligero, ofreciendo una presentación profesional de habilidades y experiencia con carga instantánea.',
+        'Currículum vitae interactivo renderizado en el navegador con Hono y desplegado sobre Cloudflare Workers para máxima velocidad y disponibilidad global.',
       skillsUsed: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers'],
-      mainSkill: 'TS',
+      mainSkill: 'TypeScript',
       githubUrl: 'https://github.com/RoyNadiel/CV',
       projectUrl: 'https://cv.roynadiel.workers.dev',
       status: 'Completado',
       duration: '1 Mes',
       complexity: 'medium',
-      targetAudience: 'Programadores CV',
+      targetAudience: 'Reclutadores',
     },
-    // {
-    //   id: 6,
-    //   name: 'WemosRC',
-    //   src: './projects/WemosRC.mp4',
-    //   description:
-    //     'Interfaz Web para el control de un carro a control remoto. Se inserta en el firmware de la placa de desarollo Wemos D1 Mini, la cual emitirá una red Wi-Fi (Nombre y Contraseña editables en el código disponible en github) para acceder a ella desde cualquier dispositivo con conexión a Wi-Fi y un navegador. ',
-    //   skillsUsed: [
-    //     'ESP8266',
-    //     'Arduino IDE',
-    //     'C++',
-    //     'HTML',
-    //     'CSS',
-    //     'JavaScript',
-    //   ],
-    //   mainSkill: 'C++',
-    //   status: 'Escalable',
-    //   duration: '1 Mes',
-    //   complexity: 'medium',
-    //   targetAudience: 'Todos',
-    // },
   ];
 
   return (
     <section
-      role="Projects"
       id="Proyectos"
-      className="w-full relative min-h-screen grid grid-cols-1 grid-rows-[auto_1fr] place-items-center gap-15 px-4 md:px-16
-                lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-5"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28"
     >
-      <h4
-        className="col-span-full inline-flex items-center gap-2 mt-25 text-center text-red-500 text-4xl font-montserrat-alt tracking-widest
-                 md:text-5xl"
-      >
-        PROYECTOS
-        <CodeIcon />
-      </h4>
+      {/* Section Header */}
+      <div className="flex flex-col items-center text-center mb-16 space-y-3">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono">
+          <Layers className="w-3.5 h-3.5 text-pink-500" />
+          <span>PROYECTOS SELECCIONADOS</span>
+        </div>
+        <h2 className="text-3xl sm:text-5xl font-sans font-extrabold tracking-tight text-slate-900">
+          Trabajo & Aplicaciones
+        </h2>
+        <p className="text-slate-600 text-sm sm:text-base max-w-lg font-sans">
+          Proyectos reales enfocados en rendimiento, interfaces pulidas y experiencia de usuario.
+        </p>
+      </div>
 
-      {Projects.map((project) => (
-        <VerticalCard key={project.id} {...project} />
-      ))}
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {Projects.map((project) => (
+          <VerticalCard key={project.id} {...project} />
+        ))}
+      </div>
     </section>
   );
 }
+
