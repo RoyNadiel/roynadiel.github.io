@@ -1,9 +1,8 @@
 import Polygon from '../shared/Polygon';
 import { useState, useEffect } from 'react';
 import TypingEffect from '../shared/TypyingEffect.jsx';
-import { FileUser, Handshake, MapPin, Code2, Clock } from 'lucide-react';
-import { CodeIcon, VenezuelaFlag } from '../shared/SVG.jsx';
-import { ExternalLink } from 'lucide-react';
+import { FileUser, Handshake, MapPin, Code2, Clock, Sparkles, ArrowRight, ExternalLink } from 'lucide-react';
+import { VenezuelaFlag } from '../shared/SVG.jsx';
 
 const AvailabilityBadge = () => {
   const [time, setTime] = useState(new Date());
@@ -23,69 +22,18 @@ const AvailabilityBadge = () => {
   });
 
   return (
-    <div className="hidden xl:flex absolute top-[15%] left-10 flex-col gap-3 z-20">
-      <div className="flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-md px-4 py-2 text-sm font-libertinus text-red-400">
-        <span className="relative flex h-3 w-3">
-          <span className="animate-ping absolute inline-flex h-full w-full bg-orange-400 opacity-75"></span>
-          <span className="relative inline-flex h-3 w-3 bg-orange-500"></span>
+    <div className="inline-flex flex-wrap items-center justify-center gap-2 mb-6">
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-800 text-xs font-mono font-medium shadow-xs">
+        <span className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
         </span>
-        Disponibilidad Inmediata
+        <span>Disponible para nuevos proyectos</span>
       </div>
 
-      <div className="flex items-center gap-2 bg-white/5 border border-white/10 backdrop-blur-md px-4 py-2 text-xs font-fira-code text-sky-800 w-fit ml-4">
-        <Clock className="w-4 h-4 text-sky-500" />
-        <span className="capitalize">{dayString}</span>, {timeString} Local
-      </div>
-    </div>
-  );
-};
-
-const FastStats = () => {
-  return (
-    <div className="hidden xl:flex absolute bottom-1/6 left-10 flex-col gap-4 z-20">
-      <div className="group flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-md p-2 rounded-2xl hover:bg-white/10 transition-colors w-fit duration-300">
-        <div className="bg-sky-500/20 p-2.5 rounded-xl text-sky-400 group-hover:bg-sky-500/30 transition-colors">
-          <Code2 className="w-5 h-5" />
-        </div>
-        <div className="flex flex-col pr-5">
-          <span className="text-[11px] text-gray-500 font-fira-code uppercase tracking-wider">
-            Experiencia
-          </span>
-          <span className="text-sm font-bold text-red-400">+1 Año Dev</span>
-        </div>
-      </div>
-
-      <a
-        className="group flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-md p-2 rounded-2xl hover:bg-white/10 transition-colors w-fit ml-6 duration-300"
-        href="https://cert.efset.org/en/4fxqHD"
-        target="_blank"
-        rel="noopener noreferrer"
-        data-interactive="true"
-        title="Ver certificado de nivel de inglés"
-      >
-        <div className="bg-red-500/20 p-2.5 rounded-xl text-red-500 group-hover:bg-red-500/30 transition-colors">
-          <ExternalLink size={18} className="text-red-500" />
-        </div>
-        <div className="flex flex-col pr-5">
-          <span className="text-[11px] text-gray-500 font-fira-code uppercase tracking-wider">
-            Inglés
-          </span>
-          <span className="text-sm font-bold text-red-400">B2 Intermedio</span>
-        </div>
-      </a>
-
-      <div className="group flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-md p-2 rounded-2xl hover:bg-white/10 transition-colors w-fit duration-300">
-        <div className="bg-red-500/20 p-2.5 rounded-xl text-red-500 group-hover:bg-red-500/30 transition-colors">
-          <MapPin className="w-5 h-5" />
-        </div>
-        <div className="flex flex-col pr-5">
-          <span className="text-[11px] text-gray-500 font-fira-code uppercase tracking-wider">
-            Ubicación
-          </span>
-          <span className="text-sm font-bold text-red-400 inline-flex items-center gap-x-1">
-            Venezuela <VenezuelaFlag /> | Remoto
-          </span>
-        </div>
+      <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-50 border border-slate-200/80 text-slate-600 text-xs font-mono">
+        <Clock className="w-3.5 h-3.5 text-slate-400" />
+        <span className="capitalize">{dayString}</span>, {timeString} Local (VE)
       </div>
     </div>
   );
@@ -96,97 +44,110 @@ export default function Hero() {
   const [copied, setCopied] = useState(false);
 
   const handleContactClick = () => {
-    // Copiamos el correo al portapapeles
     navigator.clipboard.writeText('almadaroy19@gmail.com');
-
-    // Mostramos feedback visual
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // El mensaje desaparece en 2 segundos
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
     <section
-      role="Presenación"
       id="Hero"
-      className="relative w-full h-screen py-14"
+      className="relative w-full min-h-[90vh] pt-32 pb-20 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center"
     >
-      <AvailabilityBadge />
-      <FastStats />
+      {/* Background Decorative Glow */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-      <section
-        role="Centro, Presentación"
-        className="h-full flex flex-col justify-around items-center text-center px-5 md:px-10 relative z-10"
-      >
+      {/* Availability & Time */}
+      <AvailabilityBadge />
+
+      {/* Polygon Interactive Element */}
+      <div className="my-6">
         <Polygon
           isHovered={isHovered}
           className={`${
             isHovered
-              ? 'bg-red-500 transition-all duration-1000 ease-in-out scale-110 shadow-[0_0_30px_rgba(239,68,68,0.5)]'
-              : 'bg-blue-500 transition-all duration-500 ease-in-out shrink-0'
+              ? 'bg-pink-500 transition-all duration-700 ease-out scale-110 shadow-[0_0_40px_rgba(236,72,153,0.35)]'
+              : 'bg-cyan-600 transition-all duration-500 ease-in-out shrink-0'
           }`}
         />
+      </div>
 
-        <div className="flex flex-col items-center">
-          <h2
-            className="flex flex-col text-5xl lg:text-6xl items-center justify-center gap-2 font-fira-code font-bold text-red-500
-                        md:flex-row"
-          >
-            <strong>
-              <TypingEffect text={`Software Developer`} typingSpeed={100} />
-            </strong>
-            <CodeIcon />
-          </h2>
-          <p className="max-w-200 text-lg font-fira-code text-red-600 mt-10 md:mt-2">
-            Autodidacta Desarrollador de Software.
-          </p>
-          <p className="max-w-200 text-lg font-fira-code text-red-600">
-            Orientado a la Web.
-          </p>
-          <p className="max-w-200 text-lg md:text-xl font-libertinus text-blue-500 mt-6">
-            Platón es mi amigo, pero es más amiga la verdad.
-          </p>
-          <p className="max-w-200 text-xl font-fira-code text-blue-500 font-bold">
-            ~Aristoteles<span className="text-pink-500 text-sm">.</span>
-          </p>
+      {/* Main Title & Subtitles */}
+      <div className="max-w-4xl mx-auto space-y-4">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-sans font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+          <span>Roy Nadiel</span>
+          <span className="block text-2xl sm:text-4xl lg:text-5xl font-serif italic font-normal text-slate-600 mt-2">
+            <TypingEffect text="Software Developer" typingSpeed={100} />
+          </span>
+        </h1>
+
+        <p className="max-w-xl mx-auto text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
+          Especializado en interfaces modernas, Edge Computing y arquitecturas web de alto rendimiento.
+        </p>
+
+        <blockquote className="inline-block pt-2 text-xs sm:text-sm font-mono text-slate-500">
+          «Platón es mi amigo, pero es más amiga la verdad» — <span className="font-semibold text-slate-700">Aristóteles</span>
+        </blockquote>
+      </div>
+
+      {/* CTA Buttons - ACME / VenDevs Style */}
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a
+          href="mailto:almadaroy19@gmail.com?subject=%C2%A1Hola%20Roy!%20%C2%BFcuando%20tienes%20tiempo%20para%20una%20entrevista%3F"
+          title="Haz clic para enviar correo o copiar dirección"
+          aria-label="Contratar a Roy Nadiel"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-sans font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onClick={handleContactClick}
+        >
+          {copied ? (
+            '¡Correo copiado!'
+          ) : (
+            <>
+              Contáctame
+              <Handshake className="w-4 h-4" />
+            </>
+          )}
+        </a>
+
+        <a
+          href="https://cv.roynadiel.workers.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-slate-50 text-slate-800 font-sans font-semibold text-sm border border-slate-200 shadow-xs hover:border-slate-300 transition-all duration-200 cursor-pointer"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          Ver CV
+          <FileUser className="w-4 h-4 text-slate-500" />
+        </a>
+      </div>
+
+      {/* Fast Stats Bar (ACME pill style) */}
+      <div className="mt-12 flex flex-wrap items-center justify-center gap-3 max-w-2xl mx-auto">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/70 backdrop-blur-md border border-slate-200/80 text-slate-700 text-xs font-mono shadow-xs">
+          <Code2 className="w-4 h-4 text-cyan-600" />
+          <span><strong>+1 Año</strong> de Experiencia</span>
         </div>
 
-        <div className="inline-flex gap-x-3 md:gap-x-8 items-center">
-          <a
-            href="mailto:almadaroy19@gmail.com?subject=%C2%A1Hola%20Roy!%20%C2%BFcuando%20tienes%20tiempo%20para%20una%20entrevista%3F"
-            data-interactive="true"
-            title="Haz clic para enviar correo o copiar dirección"
-            aria-label="Enlace hacia Gmail para Contratarme"
-            className={`flex justify-center items-center gap-x-2 font-inconsolata tracking-widest h-10 md:h-12 w-38 md:w-48 text-sm md:text-xl py-2 px-4 rounded-xl heroButtonAnimation transition-colors duration-300 ${
-              copied
-                ? 'bg-sky-700 border border-sky-700 text-white'
-                : 'bg-sky-700 border border-sky-700 text-white'
-            }`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            onClick={handleContactClick}
-          >
-            {copied ? (
-              'Mail Copied!'
-            ) : (
-              <>
-                Hire Me
-                <Handshake className="w-4 h-4 md:w-5 md:h-5" />
-              </>
-            )}
-          </a>
-          <a
-            href="https://cv.roynadiel.workers.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-fit md:w-40 h-10 md:h-12 inline-flex items-center justify-center gap-2 py-2 px-4 text-sm md:text-xl font-inconsolata tracking-widest rounded-xl border-2 border-sky-500 transition-colors duration-300 cursor-pointer heroButtonAnimation"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            Ver CV
-            <FileUser className="w-4 h-4 md:w-5 md:h-5" />
-          </a>
+        <a
+          href="https://cert.efset.org/en/4fxqHD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/70 backdrop-blur-md border border-slate-200/80 text-slate-700 text-xs font-mono shadow-xs hover:border-slate-300 transition"
+        >
+          <ExternalLink className="w-3.5 h-3.5 text-pink-500" />
+          <span>Inglés: <strong>B2 Intermedio</strong></span>
+        </a>
+
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/70 backdrop-blur-md border border-slate-200/80 text-slate-700 text-xs font-mono shadow-xs">
+          <MapPin className="w-3.5 h-3.5 text-rose-500" />
+          <span className="inline-flex items-center gap-1.5">
+            Venezuela <VenezuelaFlag /> | Remoto
+          </span>
         </div>
-      </section>
+      </div>
     </section>
   );
 }
