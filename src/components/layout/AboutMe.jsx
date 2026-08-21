@@ -58,7 +58,7 @@ export default function AboutMe() {
     {
       title: 'IA / Machine Learning (Explorando)',
       icon: <Brain className="w-4 h-4 text-emerald-600" />,
-    }
+    },
   ];
 
   const technologies = [
@@ -101,7 +101,11 @@ export default function AboutMe() {
         {/* Bio Card */}
         <div className="p-8 md:p-10 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-xs">
           <p className="text-slate-700 font-sans text-base sm:text-lg leading-relaxed">
-            Nací en 1999. Me inicié en el mundo de la programación en la universidad realizando proyectos en C y C#. Más adelante descubrí la ingeniería web y el ecosistema moderno de JavaScript/TypeScript, al cual le dedico apasionadamente la mayor parte de mi tiempo libre creando herramientas, optimizando flujos y refinando productos.
+            Nací en 1999. Me inicié en el mundo de la programación en la
+            universidad realizando proyectos en C y C#. Más adelante descubrí la
+            ingeniería web y el ecosistema moderno de JavaScript/TypeScript, al
+            cual le dedico apasionadamente la mayor parte de mi tiempo libre
+            creando herramientas, optimizando flujos y refinando productos.
           </p>
         </div>
 
@@ -121,7 +125,8 @@ export default function AboutMe() {
                 Escritura
               </h4>
               <p className="text-slate-600 font-sans text-sm leading-relaxed">
-                Me gusta escribir para estructurar pensamientos complejos, expresar ideas en verso y sintetizar conceptos técnicos.
+                Me gusta escribir para estructurar pensamientos complejos,
+                expresar ideas en verso y sintetizar conceptos técnicos.
               </p>
             </div>
 
@@ -134,7 +139,8 @@ export default function AboutMe() {
                 Música
               </h4>
               <p className="text-slate-600 font-sans text-sm leading-relaxed">
-                Amo la música en todas sus facetas; es el motor creativo de mi día a día y concentración constante.
+                Amo la música en todas sus facetas; es el motor creativo de mi
+                día a día y concentración constante.
               </p>
             </div>
 
@@ -147,7 +153,8 @@ export default function AboutMe() {
                 Calistenia
               </h4>
               <p className="text-slate-600 font-sans text-sm leading-relaxed">
-                Entrenamiento físico consistente. La constancia corporal complementa la resistencia mental al resolver código.
+                Entrenamiento físico consistente. La constancia corporal
+                complementa la resistencia mental al resolver código.
               </p>
             </div>
           </div>
@@ -179,7 +186,7 @@ export default function AboutMe() {
           </h3>
 
           {/* Marquee Container with edge fade masks */}
-          <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] pt-4 pb-16">
+          <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] pt-14 pb-16">
             <div className="animate-marquee flex items-center gap-8 py-2">
               {/* Duplicar la lista para un loop infinito sin cortes */}
               {[...technologies, ...technologies].map((tech, index) => (
