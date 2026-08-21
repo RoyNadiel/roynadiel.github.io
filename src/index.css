@@ -118,10 +118,8 @@ body {
   transform: translateY(-2px);
 }
 
-@media (width >= 900px) {
-  .reflect-image {
-    -webkit-box-reflect: below 8px linear-gradient(transparent 10%, rgba(0, 0, 0, 0.28));
-  }
+.reflect-image {
+  -webkit-box-reflect: below 8px linear-gradient(transparent 5%, rgba(0, 0, 0, 0.35));
 }
 
 .skillsImg {

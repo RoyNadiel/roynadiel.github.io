@@ -170,8 +170,8 @@ export default function AboutMe() {
           </h3>
 
           {/* Marquee Container with edge fade masks */}
-          <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-            <div className="animate-marquee flex items-center gap-8 py-4">
+          <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] pt-12 pb-16">
+            <div className="animate-marquee flex items-center gap-8 py-2">
               {/* Duplicar la lista para un loop infinito sin cortes */}
               {[...technologies, ...technologies].map((tech, index) => (
                 <div
