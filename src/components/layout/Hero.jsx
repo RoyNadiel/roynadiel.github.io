@@ -1,7 +1,16 @@
 import Polygon from '../shared/Polygon';
 import { useState, useEffect } from 'react';
 import TypingEffect from '../shared/TypyingEffect.jsx';
-import { FileUser, Handshake, MapPin, Code2, Clock, Sparkles, ArrowRight, ExternalLink } from 'lucide-react';
+import {
+  FileUser,
+  Handshake,
+  MapPin,
+  Code2,
+  Clock,
+  Sparkles,
+  ArrowRight,
+  ExternalLink,
+} from 'lucide-react';
 import { VenezuelaFlag } from '../shared/SVG.jsx';
 
 const AvailabilityBadge = () => {
@@ -15,10 +24,12 @@ const AvailabilityBadge = () => {
   const timeString = time.toLocaleTimeString('es-VE', {
     hour: '2-digit',
     minute: '2-digit',
+    timeZone: 'America/Caracas',
   });
 
   const dayString = time.toLocaleDateString('es-VE', {
     weekday: 'long',
+    timeZone: 'America/Caracas',
   });
 
   return (
@@ -52,7 +63,7 @@ export default function Hero() {
   return (
     <section
       id="Hero"
-      className="relative w-full min-h-[90vh] pt-24 sm:pt-32 pb-20 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center"
+      className="relative w-full min-h-[90vh] pt-18 sm:pt-32 pb-18 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center"
     >
       {/* Background Decorative Glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -75,19 +86,22 @@ export default function Hero() {
       {/* Main Title & Subtitles */}
       <div className="max-w-4xl mx-auto space-y-4">
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-sans font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-          <span>Roy Nadiel</span>
+          <span>Roy Nadiel</span> <span className="text-pink-500">H.</span>
           <span className="block text-2xl sm:text-4xl lg:text-5xl font-serif italic font-normal text-slate-600 mt-2">
             <TypingEffect text="Software Developer" typingSpeed={100} />
           </span>
         </h1>
 
         <p className="max-w-xl mx-auto text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
-          Especializado en interfaces modernas, Edge Computing y arquitecturas web de alto rendimiento.
+          Especializado en interfaces modernas, Edge Computing y arquitecturas
+          web de alto rendimiento.
         </p>
 
         <blockquote className="pt-2 text-xs sm:text-sm font-mono text-slate-500">
           <p>«Platón es mi amigo, pero es más amiga la verdad»</p>
-          <span className="block mt-1 font-semibold text-slate-700">~ Aristóteles</span>
+          <span className="block mt-1 font-semibold text-slate-700">
+            ~ Aristóteles
+          </span>
         </blockquote>
       </div>
 
@@ -129,7 +143,9 @@ export default function Hero() {
       <div className="mt-12 flex flex-wrap items-center justify-center gap-3 max-w-2xl mx-auto">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/70 backdrop-blur-md border border-slate-200/80 text-slate-700 text-xs font-mono shadow-xs">
           <Code2 className="w-4 h-4 text-cyan-600" />
-          <span><strong>+1 Año</strong> de Experiencia</span>
+          <span>
+            <strong>+2 Años</strong> de Experiencia
+          </span>
         </div>
 
         <a
@@ -139,7 +155,9 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/70 backdrop-blur-md border border-slate-200/80 text-slate-700 text-xs font-mono shadow-xs hover:border-slate-300 transition"
         >
           <ExternalLink className="w-3.5 h-3.5 text-pink-500" />
-          <span>Inglés: <strong>B2 Intermedio</strong></span>
+          <span>
+            Inglés: <strong>B2 Intermedio</strong>
+          </span>
         </a>
 
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/70 backdrop-blur-md border border-slate-200/80 text-slate-700 text-xs font-mono shadow-xs">

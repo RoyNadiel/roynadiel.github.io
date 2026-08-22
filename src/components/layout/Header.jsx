@@ -6,8 +6,8 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
-      <div className="w-full max-w-5xl h-14 px-2 md:px-6 flex items-center justify-center sm:justify-between rounded-full bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-sm shadow-slate-900/5">
+    <header className="fixed top-2 sm:top-4 left-0 right-0 z-50 flex justify-center px-4">
+      <div className="w-full max-w-5xl h-10 sm:h-14 px-2 md:px-6 flex items-center justify-center sm:justify-between rounded-full bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-sm shadow-slate-900/5">
         {/* Logo / Brand (Hidden on Mobile) */}
         <button
           onClick={handleReloadClick}
@@ -21,10 +21,13 @@ export default function Header() {
         </button>
 
         {/* Navigation Links (Pill Style) */}
-        <nav className="flex items-center gap-0.5 md:gap-2">
+        <nav className="w-full sm:w-fit flex justify-evenly sm:justify-center items-center gap-0.5 md:gap-2">
+          <a href="#Hero" className="sm:hidden text-pink-500 text-xs font-bold">
+            RNH
+          </a>
           <a
             href="#Hero"
-            className="px-1.5 sm:px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
+            className="hidden sm:block px-1.5 sm:px-3 py-1.5 text-xs md:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-full transition cursor-pointer"
           >
             Inicio
           </a>
